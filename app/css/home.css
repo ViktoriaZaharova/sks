@@ -1,0 +1,237 @@
+/*==========  section home  ==========*/
+/*==========  section home end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section reviews  ==========*/
+.reviews {
+  margin: 40px 0 54px; }
+
+.list-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .list-stars li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 8px 0 0;
+    width: 28px;
+    height: 26px; }
+    .list-stars li:last-child {
+      margin: 0; }
+
+.grade {
+  margin: 0 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right; }
+
+.grade-text {
+  margin: 0 32px 0 0; }
+  .grade-text p {
+    color: #858585;
+    font-size: 13px; }
+
+/*==========  section reviews end  ==========*/
+/*==========  section stages-work ==========*/
+.stages-work h2 {
+  margin: 0 0 34px; }
+
+.stages-work-box {
+  text-align: center; }
+  .stages-work-box__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto 22px;
+    position: relative;
+    z-index: 1;
+    width: 55px;
+    height: 56px; }
+    .stages-work-box__icon:before {
+      content: '';
+      position: absolute;
+      background: #5BBE2C;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      z-index: -1;
+      bottom: 0;
+      right: -9px; }
+  .stages-work-box h3 {
+    margin: 0 auto 16px;
+    max-width: 200px; }
+
+/*==========  section stages-work end  ==========*/
+/*==========  section callback  ==========*/
+.callback {
+  position: relative;
+  padding: 126px 0 0;
+  overflow: hidden; }
+  .callback h3 {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 0 0 35px; }
+
+.callback-wrapper {
+  width: 100%;
+  color: #fff;
+  background: #2E3649;
+  padding: 70px 0; }
+
+.callback-img {
+  position: absolute;
+  left: -166px;
+  top: -126px;
+  min-width: 590px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.form button {
+  max-width: 180px;
+  width: 100%;
+  height: 40px; }
+
+/*==========  section callback end  ==========*/
+/*==========  section partners ==========*/
+.partners {
+  margin: 84px 0 0; }
+
+.partners-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 24px;
+  height: 101px;
+  max-width: 150px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); }
+  .partners-box img {
+    max-height: 100%; }
+  .partners-box:hover {
+    -webkit-filter: none;
+            filter: none; }
+
+/*==========  section partners end  ==========*/
+/*==========  section news ==========*/
+.news {
+  margin: 30px 0 74px; }
+  .news .btn-view-all {
+    margin-left: auto; }
+
+.news-card {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #ECECEC;
+    border-radius: 3px;
+  overflow: hidden; }
+  .news-card__img {
+    width: 100%;
+    height: 157px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    border-radius: 2px;
+    background: #C4C4C4; }
+  .news-card__body {
+    width: 100%;
+    height: calc(100% - 157px);
+    padding: 20px 33px 26px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .news-card__title {
+    font-weight: bold;
+    color: #000;
+    font-size: 18px;
+    margin: 0 0 10px; }
+    .news-card__title:hover {
+      color: #2E3649; }
+  .news-card .box-text {
+    margin: 0 0 auto; }
+  .news-card__footer {
+    margin: 26px 0 0;
+    color: #858585;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 13px; }
+
+.news-card-v2 .news-card__body {
+  height: 100%;
+  padding: 48px 33px 26px 24px; }
+
+/*==========  section news end  ==========*/
+/*==========  section map ==========*/
+.map {
+  background: #EEEEEE;
+  width: 100%;
+  height: 383px; }
+  .map iframe {
+    width: 100%;
+    height: 100%; }
+
+/*==========  section map end  ==========*/
