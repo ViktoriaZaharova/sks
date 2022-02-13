@@ -1,24 +1,373 @@
 @import "vars"
 
-/*==========  section home  ==========*/
+/*==========  section banner  ==========*/
+.banner
+  margin: 0 0 30px
 
-/*==========  section home end  ==========*/
+.banner-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  background: #FBD300
+  border-radius: 3px
+  padding: 23px 40px 27px 38px
+  h3
+    font-size: 25px
+    max-width: 590px
+  .btn
+    height: 40px
+    padding: 0 47px
+
+/*==========  section banner end  ==========*/
 
 
+/*==========  section category ==========*/
+.category-box
+  position: relative
+  display: flex
+  align-items: center
+  background: #F7F8F9
+  width: 100%
+  height: 174px
+  margin: 0 0 10px
+  padding: 45px 23px
+  color: #000000
+  overflow: hidden
+  &:hover
+    background: $green
+    color: #fff
+    .category-box__icon
+      filter: brightness(0) invert(1)
+    .category-box__border
+      border-color: #fff
+  .box-text
+    line-height: 21px
+    display: block
+  &__body
+    padding: 0 0 0 36px
+    width: calc(100% - 83px)
+  &__icon
+    width: 83px
+    height: 83px
+    display: flex
+    align-items: center
+    justify-content: center
+  &__title
+    font-size: 18px
+    font-weight: bold
+    text-transform: uppercase
+    margin: 0 0 3px
+    display: block
+  &__border
+    border: 2px solid #000
+    width: 49px
+    height: 61px
 
-/*==========  section  ==========*/
+.category-box-min
+  .category-box__body
+    width: calc(100% - 49px)
+    padding: 0 0 0 19px
+
+.category-box-min
+  .category-box__icon
+    width: 64px
+    height: 75px
+  .category-box__body
+    width: calc(100% - 64px)
+    padding: 0 0 0 13px
+
+.category-box-vertical
+  height: 360px
+  padding: 32px 34px 0
+  align-items: flex-start
+  .category-box__img
+    position: absolute
+    left: 50%
+    top: 100px
+    bottom: 0
+    transform: translate(-50%,0)
+    min-width: 472px
+    display: flex
+    align-items: flex-start
+    justify-content: center
+  .category-box__body
+    width: 100%
+    padding: 0
+
 
 /*==========  section end  ==========*/
 
 
-/*==========  section  ==========*/
+/*==========  section advantages ==========*/
+.advantages
+  margin: 40px 0
+  h2
+    margin: 0 0 57px
+    text-align: left
 
+.advantages-box
+  text-align: center
+  width: 100%
+  margin: 0 auto 10px
+  .box-text
+    max-width: 216px
+    width: 100%
+    margin: 0 auto
+  h4
+    text-transform: uppercase
+    margin: 0 auto 11px
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 21px
+/*==========  section advantages end  ==========*/
+
+
+/*==========  section sales ==========*/
+.sales
+  h2
+    margin: 0 0 37px
+
+.product-card
+  width: 100%
+  height: 100%
+  position: relative
+  border: 1px solid #EEEEEE
+  padding: 12px 20px 23px 22px
+  background: #FFFFFF
+  transition: .3s ease
+  &:hover
+    box-shadow: 0px 0px 16px rgba(46, 54, 73, 0.2)
+  &__photo
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 220px
+    img
+      max-height: 100%
+  &__body
+    padding: 8px 0 0
+    height: calc(100% - 220px)
+    display: flex
+    flex-direction: column
+  &__title
+    color: #000
+    font-weight: bold
+    margin: 0 0 4px
+    min-height: 42px
+    line-height: 21px
+    &:hover
+      color: #000
+  &__footer
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+  .btn
+    height: 40px
+    padding: 0 32px
+  .list-colors
+    margin: 0 0 4px
+  .price
+    margin: auto 0 7px
+    line-height: 26px
+
+.btn-add-basket
+  .btn-icon
+    display: none
+    width: 16px
+    height: 16px
+    fill: #fff
+
+.list-colors
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  li
+    border-radius: 50%
+    width: 22px
+    height: 22px
+    min-width: 22px
+    margin: 0 5px 0 0
+    &:last-child
+      margin: 0
+  &__yellow
+    background: #FFC700
+  &__brown
+    background: #2C1212
+  &__black
+    background: #000000
+  &__grey
+    background: #D9D9D9
+
+.price
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.old-price
+  margin: 0 0 0 13px
+  color: #858585
+  font-size: 13px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translate(0,-50%)
+    width: 100%
+    height: 1px
+    background: #B70000
+
+.new-price
+  font-size: 21px
+  font-weight: bold
+  text-transform: uppercase
+
+.currency
+  font-size: 14px
+
+.labels
+  position: absolute
+  top: 19px
+  left: 19px
+  font-size: 13px
+  color: #fff
+  line-height: 21px
+
+  li
+    margin: 0 0 8px
+    width: fit-content
+    border-radius: 14px
+    text-align: center
+    padding: 0 11px
+    &:last-child
+      margin: 0
+
+.btn-tooltip
+  position: absolute
+  background: transparent
+  top: 25px
+  right: 18px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 22px
+  height: 18px
+
+.btn-tooltip-green
+  fill: $green
+
+.btn-tooltip-red
+  fill: #B60101
+/*==========  section sales end  ==========*/
+
+
+/*==========  section measurers-call ==========*/
+.measurers-call.callback
+  padding: 123px 0 0
+  .callback-img
+    min-width: 594px
+    top: -123px
+    left: -70px
+  .callback
+    h3
+      margin: 0 0 14px
+  .form
+    position: relative
+    label
+      margin: 0
+      max-width: 282px
+    button
+      position: absolute
+      right: 0
+      top: 0
+      max-width: 141px
+
+.measurers-call__name
+  margin: 0 0 30px
+  font-size: 16px
+  h4
+    font-size: 16px
+
+/*==========  section measurers-call end  ==========*/
+
+
+/*==========  section certificates ==========*/
+.certificates
+  margin: 73px 0 44px
+
+.certificates-box
+  width: 100%
+  height: 260px
+  background: #F1F1F1
+
+
+.certificates-slider
+  .slick-list
+    margin: 0 -11px
+  .slick-slide
+    padding: 0 11px
+  .slick-arrow
+    stroke: #2E3649
 /*==========  section end  ==========*/
+
+
+/*==========  section seo-content ==========*/
+.seo-content
+  .box-text
+    line-height: 26px
+  h4
+    font-weight: normal
+    font-size: 25px
+    margin: 0 0 30px
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    width: 100%
+    height: 267px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+.video-box
+  width: 100%
+  height: 326px
+  background: #C4C4C4
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+
+.btn-play
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  width: 48px
+  height: 48px
+
+/*==========  section seo-content end  ==========*/
 
 
 /*==========  section reviews  ==========*/
 .reviews
   margin: 40px 0 54px
+  .btn-group
+    margin: 20px auto 0
+
 
 .list-stars
   display: flex
@@ -46,6 +395,66 @@
     color: #858585
     font-size: 13px
 
+.reviews-box
+  width: 100%
+  margin: 0 0 30px
+  border: 1px solid #EEEEEE
+  background: #fff
+  padding: 22px 33px 32px 15px
+  display: flex
+  align-items: flex-start
+  &__avatar
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: calc(100% - 48px)
+    padding: 0 0 0 36px
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 0 20px
+  .list-stars
+    li
+      width: 19px
+      height: 18px
+
+.date
+  color: #858585
+  margin: 5px 0 0
+  font-size: 13px
+
+.leave-feedback
+  display: none
+  h3
+    margin: 0 0 34px
+
+.form-feedback
+  label
+    margin: 0 0 18px
+  .btn-group
+    justify-content: flex-start
+
+.estimate
+  margin: 12px 0 0
+  p
+    margin: 0 0 12px
+    font-size: 13px
+    color: #858585
+  .list-stars
+    li
+      width: 19px
+      height: 18px
 /*==========  section reviews end  ==========*/
 
 
@@ -78,8 +487,6 @@
   h3
     margin: 0 auto 16px
     max-width: 200px
-
-
 /*==========  section stages-work end  ==========*/
 
 

@@ -1,0 +1,285 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1790px)
+  .fixed-block
+    max-width: 250px
+
+  .menu li
+    margin: 0 30px 0 0
+
+@media only screen and (max-width: 1700px)
+  .container
+    max-width: 1000px
+
+  footer
+    .address-box
+      strong
+        display: block
+
+  header
+    .address-box
+      font-size: 12px
+
+    .messengers
+      margin-left: 0
+
+    .phone
+      font-size: 12px
+
+    .schedule
+      font-size: 12px
+
+  .category-box
+    padding: 30px 20px
+
+    &__icon
+      width: 63px
+      height: 63px
+
+    &__body
+      width: calc(100% - 63px)
+      padding: 0 0 0 15px
+
+    .category-box__title
+      font-size: 14px
+
+    .box-text
+      font-size: 12px
+
+  .category-box-min
+    .category-box__icon
+      width: 40px
+      height: 40px
+
+    .category-box__body
+      width: calc(100% - 40px)
+
+    .category-box__title
+      font-size: 13px
+
+  .category-box-vertical .category-box__img
+    min-width: 372px
+
+  .new-price
+    font-size: 16px
+
+  .old-price
+    font-size: 12px
+
+  .product-card
+
+    .btn
+      padding: 0 20px
+      font-size: 12px
+
+    &__footer
+      font-size: 12px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1500px)
+  header
+    .schedule
+      max-width: 70px
+
+  .container
+    max-width: 900px
+
+  .callback-img
+    min-width: 500px
+
+  .measurers-call.callback .callback-img
+    min-width: 500px
+    left: -50px
+
+  .callback-wrapper
+    padding: 40px 0
+
+  .product-card
+    padding: 12px 15px
+
+    .btn
+      padding: 0 11px
+
+  footer
+    .address-box
+      font-size: 12px
+
+@media only screen and (max-width: 1400px)
+  .fixed-block
+    display: none
+    max-width: 375px
+    padding: 20px 25px 44px
+
+    .btn-close
+      display: flex
+
+    .logo
+      max-width: 195px
+      margin: 0 0 30px
+
+  .menu-products
+    margin: 0 0 126px
+
+
+  .btn-burger
+    position: absolute
+    left: 10px
+    display: flex
+    top: 50%
+    transform: translate(0, -50%)
+
+  .container
+    max-width: 1200px
+
+  header
+    .container
+      position: relative
+      padding-left: 60px
+
+    .schedule
+      max-width: none
+      font-size: 14px
+
+    .phone
+      font-size: 14px
+
+  .product-card
+    font-size: 14px
+
+    .btn
+      font-size: 14px
+      padding: 0 40px
+
+  .category-box-min .category-box__title, .category-box .category-box__title
+    font-size: 18px
+
+@media only screen and (max-width: 1200px)
+  .btn-add-basket
+    .btn-icon
+      display: flex
+
+    .btn-text
+      display: none
+
+  .product-card
+    .btn
+      height: 23px
+      padding: 0 20px
+
+  header
+    .phone, .schedule
+      font-size: 12px
+
+  .btn-basket
+    margin: 0
+@media only screen and (max-width: 992px)
+  .banner-wrapper
+    h3
+      font-size: 20px
+      max-width: 400px
+
+  .header-top
+    display: none
+
+  header
+    margin: 0 0 13px
+    padding: 10px 0 13px
+
+    .logo
+      display: flex
+      margin: 0 auto
+
+    .btn-search
+      display: none !important
+
+  .header-bottom
+    margin: 0
+
+  .dropdown-box-basket
+    font-size: 15px
+
+  .dropdown-menu
+    padding: 15px
+
+  .dropdown-box-basket__body
+    padding: 0 0 0 10px
+
+  .btn-call
+    display: none
+
+  .menu-products
+    margin: 0
+
+  .fixed-block
+    &__head
+
+      display: flex
+
+    .form-search
+      display: block
+
+    &__bottom
+      display: block
+
+  .footer-box
+    margin: 0 0 43px
+
+  footer
+    background: #313131
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  .banner-wrapper
+    padding: 19px
+    h3
+      max-width: 286px
+      font-size: 16px
+
+  footer
+    padding: 40px 0 60px
+    .logo
+      margin: 0 auto 32px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px)
+  .btn
+    font-size: 12px
+
+  .banner-wrapper
+    .btn
+      max-width: 131px
+      height: 30px
+
+@media only screen and (max-width: 480px)
+  header
+    .container
+      padding-left: 30px
+
+  .btn-basket
+    width: 23px
+    height: 23px
+    min-width: 23px
+
+  .banner-wrapper
+    flex-direction: column
+    align-items: flex-start
+    h3
+      max-width: none
+      margin: 0 0 16px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 420px)
+  .container
+    padding: 0 4px
+    max-width: 336px
+
+  .row
+    margin: 0 -4px
+
+
+  .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+    padding: 0 4px
+

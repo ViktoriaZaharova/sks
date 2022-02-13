@@ -33,7 +33,37 @@
 <body>
 
 <div class="fixed-block">
+  <div class="btn-close">
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#close"></use>
+    </svg>
+  </div>
   <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+  <div class="fixed-block__head">
+
+    <div class="contacts-block">
+      <a href="tel:+78162902808" class="phone">+7 (816) 290-28-08</a>
+      <div class="schedule">Пн-Пт 9-19 Сб-Вс 10-17</div>
+    </div>
+    <div class="messengers">
+      <a href="#" class="messenger-box"><img src="img/whatsapp.png" alt=""></a>
+      <a href="#" class="messenger-box"><img src="img/viber.png" alt=""></a>
+      <a href="#" class="color-grey text-decoration">написать нам</a>
+    </div>
+  </div>
+
+  <form method="post" class="form-search">
+    <label>
+      <input type="text" placeholder="Поиск" name="search" required>
+      <button type="submit" class="form-search__btn">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+    </label>
+  </form>
+
   <ul class="menu-products my-ul">
     <li><a href="catalog.html">Межкомнатные двери</a></li>
     <li><a href="catalog.html">Входные двери</a></li>
@@ -45,7 +75,41 @@
     <li><a href="catalog.html">Двери спец. назначения</a></li>
   </ul>
 
-  <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#callbackModal">
+  <div class="fixed-block__bottom">
+    <ul class="fixed-block-menu my-ul">
+      <li><a href="service.html">Услуги</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="#sales" class="go_to">Акции</a></li>
+      <li><a href="#">Купить оптом</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+
+
+    <div class="address-box">
+      <div class="address-box__icon d-flex">
+        <svg class="svg-icon fill-none">
+          <use xlink:href="img/sprite.svg#location"></use>
+        </svg>
+      </div>
+      <div class="address-box__text">
+        <strong>г. Великий Новгород</strong> ул. Нехинская 55 д (пер. Полевой)
+      </div>
+    </div>
+
+
+    <ul class="list-social my-ul">
+      <li><a href="#">
+        <img src="img/vk.svg" alt="">
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#instagram"></use>
+        </svg>
+      </a></li>
+    </ul>
+  </div>
+
+  <a href="#" class="btn btn-accent btn-call" data-toggle="modal" data-target="#callbackModal">
     Бесплатный вызов замерщика
   </a>
 </div>
@@ -54,6 +118,11 @@
 <!--### HEADER ###-->
 <header>
   <div class="container">
+    <div class="btn-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <div class="header-top">
       <div class="row">
         <div class="col-12 col-md-6">
@@ -83,20 +152,9 @@
     </div>
 
     <div class="header-bottom">
-      <div class="row">
-        <div class="col-4 d-block d-sm-none">
-          <div class="btn-burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
+      <div class="row align-items-center">
 
-        <div class="col-4 d-block d-sm-none">
-          <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
-        </div>
-
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-lg-8 d-none d-lg-block">
           <ul class="menu my-ul">
             <li><a href="services.html">Услуги</a></li>
             <li><a href="contacts.html">Контакты</a></li>
@@ -106,7 +164,10 @@
           </ul>
         </div>
 
-        <div class="col-4 d-flex flex-wrap align-items-center">
+        <div class="col-12 col-lg-4 d-flex flex-wrap align-items-center">
+
+          <a href="index.html" class="logo"><img src="img/logo-white.png" alt=""></a>
+
           <a href="#" class="btn-search d-flex">
             <svg class="svg-icon">
               <use xlink:href="img/sprite.svg#search"></use>
@@ -139,26 +200,478 @@
 </header>
 <!--### HEADER end ###-->
 
-
 <!--### SECTION  ###-->
-<section class="">
+<div class="banner">
   <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="banner-wrapper">
+          <h3>Двери в Великом Новгороде и еще немного текста</h3>
+          <a href="#" class="btn btn-accent">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--### SECTION END ###-->
 
+
+<!--### SECTION category ###-->
+<div class="category">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-3">
+        <a href="#" class="category-box category-box-vertical">
+          <span class="category-box__body">
+            <span class="category-box__title">Название</span>
+            <span class="box-text">
+             Lorem ipsum dolor sit
+            </span>
+          </span>
+          <span class="category-box__img"><img src="img/img1.png" alt=""></span>
+        </a>
+      </div>
+
+      <div class="col-12 col-lg-9">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <a href="#" class="category-box">
+              <span class="category-box__icon"><img src="img/category-icon1.svg" alt=""></span>
+              <span class="category-box__body">
+                  <span class="category-box__title">Входные</span>
+                  <span class="box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-6">
+            <a href="#" class="category-box">
+              <span class="category-box__icon"><img src="img/category-icon2.svg" alt=""></span>
+              <span class="category-box__body">
+                  <span class="category-box__title">Межкомнатные</span>
+                  <span class="box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-4">
+            <a href="#" class="category-box category-box-min">
+              <span class="category-box__icon"><img src="img/category-icon3.svg" alt=""></span>
+              <span class="category-box__body">
+                  <span class="category-box__title">Специальные</span>
+                  <span class="box-text">Lorem ipsum dolor sit</span>
+                </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <a href="#" class="category-box category-box-min">
+              <span class="category-box__icon"><img src="img/category-icon4.svg" alt=""></span>
+              <span class="category-box__body">
+                  <span class="category-box__title">Фурнитура</span>
+                  <span class="box-text">Lorem ipsum dolor sit</span>
+                </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <a href="#" class="category-box category-box-min">
+              <span class="category-box__border"></span>
+              <span class="category-box__body">
+                  <span class="category-box__title">Название</span>
+                  <span class="box-text">Lorem ipsum dolor sit</span>
+                </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--### SECTION END ###-->
+
+<!--### SECTION advantages ###-->
+<section class="advantages">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Преимущества</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="advantages-box">
+          <div class="advantages-box__icon"><img src="img/advantages-icon.svg" alt=""></div>
+          <div class="advantages-box__text">
+            <h4>нАЗВАНИЕ</h4>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="advantages-box">
+          <div class="advantages-box__icon"><img src="img/advantages-icon.svg" alt=""></div>
+          <div class="advantages-box__text">
+            <h4>нАЗВАНИЕ</h4>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="advantages-box">
+          <div class="advantages-box__icon"><img src="img/advantages-icon.svg" alt=""></div>
+          <div class="advantages-box__text">
+            <h4>нАЗВАНИЕ</h4>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="advantages-box">
+          <div class="advantages-box__icon"><img src="img/advantages-icon.svg" alt=""></div>
+          <div class="advantages-box__text">
+            <h4>нАЗВАНИЕ</h4>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <!--### SECTION END ###-->
 
-<!--### SECTION  ###-->
-<section class="">
+<!--### SECTION sales ###-->
+<section class="sales" id="sales">
   <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Товары недели!</h2>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="col-6 col-md-3 mb-25">
+        <div class="product-card">
+          <ul class="labels my-ul">
+            <li class="labels-item bg-accent">Новинка</li>
+            <li class="labels-item bg-red">Хит продаж</li>
+          </ul>
+
+
+          <button class="btn-tooltip btn-tooltip-green">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#basket-icon"></use>
+            </svg>
+            <span class="tooltip-box">Есть на складе</span>
+          </button>
+
+          <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+          <div class="product-card__body">
+            <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452</a>
+            <ul class="list-colors my-ul">
+              <li class="list-colors__yellow"></li>
+              <li class="list-colors__brown"></li>
+              <li class="list-colors__black"></li>
+            </ul>
+
+            <div class="price">
+              <div class="new-price">26 600 <span class="currency">руб</span></div>
+            </div>
+
+            <div class="product-card__footer">
+              <a href="#" class="btn btn-accent btn-add-basket">
+                <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#basket"></use></svg></span>
+                <span class="btn-text">В корзину</span>
+                </a>
+
+              <a href="#" class="color-grey">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-25">
+        <div class="product-card">
+          <ul class="labels my-ul">
+            <li class="labels-item bg-red">-30%</li>
+          </ul>
+
+          <button class="btn-tooltip btn-tooltip-red">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#basket-icon"></use>
+            </svg>
+            <span class="tooltip-box">Нет на складе</span>
+          </button>
+
+          <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+          <div class="product-card__body">
+            <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452</a>
+            <ul class="list-colors my-ul">
+              <li class="list-colors__grey"></li>
+              <li class="list-colors__yellow"></li>
+              <li class="list-colors__brown"></li>
+              <li class="list-colors__black"></li>
+            </ul>
+
+            <div class="price">
+              <div class="new-price">150 600 <span class="currency">руб</span></div>
+              <div class="old-price">250 000 руб</div>
+            </div>
+
+            <div class="product-card__footer">
+              <a href="#" class="btn btn-accent btn-add-basket">
+                <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#basket"></use></svg></span>
+                <span class="btn-text">В корзину</span></a>
+
+              <a href="#" class="color-grey">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 mb-25">
+        <div class="product-card">
+          <ul class="labels my-ul">
+            <li class="labels-item bg-red">-30%</li>
+          </ul>
+
+
+          <button class="btn-tooltip btn-tooltip-green">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#basket-icon"></use>
+            </svg>
+            <span class="tooltip-box">Есть на складе</span>
+          </button>
+
+          <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+          <div class="product-card__body">
+            <a href="product.html" class="product-card__title">Дверь межкомнатная Ф5674</a>
+            <ul class="list-colors my-ul">
+              <li class="list-colors__grey"></li>
+              <li class="list-colors__yellow"></li>
+              <li class="list-colors__brown"></li>
+              <li class="list-colors__black"></li>
+            </ul>
+
+            <div class="price">
+              <div class="new-price">150 600 <span class="currency">руб</span></div>
+              <div class="old-price">250 000 руб</div>
+            </div>
+
+            <div class="product-card__footer">
+              <a href="#" class="btn btn-accent btn-add-basket">
+                <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#basket"></use></svg></span>
+                <span class="btn-text">В корзину</span></a>
+
+              <a href="#" class="color-grey">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 mb-25">
+        <div class="product-card">
+          <ul class="labels my-ul">
+            <li class="labels-item bg-red">-50%</li>
+          </ul>
+
+          <button class="btn-tooltip btn-tooltip-green">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#basket-icon"></use>
+            </svg>
+            <span class="tooltip-box">Есть на складе</span>
+          </button>
+
+          <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+          <div class="product-card__body">
+            <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452 и еще строка</a>
+            <ul class="list-colors my-ul">
+              <li class="list-colors__grey"></li>
+              <li class="list-colors__yellow"></li>
+              <li class="list-colors__brown"></li>
+              <li class="list-colors__black"></li>
+            </ul>
+
+            <div class="price">
+              <div class="new-price">800 <span class="currency">руб</span></div>
+              <div class="old-price">10 000 руб</div>
+            </div>
+
+            <div class="product-card__footer">
+              <a href="#" class="btn btn-accent btn-add-basket">
+                <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#basket"></use></svg></span>
+                <span class="btn-text">В корзину</span></a>
+
+              <a href="#" class="color-grey">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 <!--### SECTION END ###-->
+
+
+<!--### SECTION measurers-call ###-->
+<div class="callback measurers-call">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="callback-wrapper">
+          <div class="row">
+            <div class="col-md-6 d-none d-md-block">
+              <div class="callback-img"><img src="img/img4.png" alt=""></div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="callback-body">
+                <h3><span class="bg-accent">Бесплатный</span> вызов замерщика!</h3>
+
+                <div class="measurers-call__name">
+                  <h4>Василий</h4>
+                  <p>замерщик и дизайнер</p>
+                </div>
+
+                <form method="post" class="form">
+                  <div class="row">
+                    <div class="col-12 col-sm-7">
+                      <label>
+                        <input type="text" placeholder="Телефон" name="phone">
+                      </label>
+                      <button type="submit" class="btn btn-accent">Отправить</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--### SECTION END ###-->
+
+<!--### SECTION certificates ###-->
+<section class="certificates" id="certificates">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Сертификаты</h2>
+      </div>
+
+      <div class="col-12">
+        <div class="certificates-slider">
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION certificates END ###-->
+
+<!--### SECTION seo-content ###-->
+<div class="seo-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-5 mb-30">
+        <div class="seo-content__img"><img src="img/img3.jpeg" alt=""></div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-7 mb-30">
+        <div class="box-text">
+          <p>Первое впечатление о владельце квартиры формируется при виде входной двери: ее дизайн, надежность и
+            качество говорят о личности хозяина. Межкомнатные полотна могут рассказать о чувстве стиля, отношении к
+            интерьеру и вкусе жильцов. Чтобы окружающие знали только ваши лучшие стороны, обращайтесь в магазин «Двери
+            Нева».</p>
+
+          <p>Мы на рынке больше 10 лет и за это время изучили предпочтения потребителей. Знаем, какие модели понравятся
+            ценителям классики, а какие — любителям хай-тек, в магазине есть недорогие предложения и изделия
+            премиум-класса. Вы сможете купить межкомнатные и металлические входные двери в соответствии с личными
+            предпочтениями, дизайном квартиры и бюджетом.</p>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <h4>Недорогие двери от производителя в Великом Новгороде</h4>
+
+        <div class="box-text">
+
+          <p>Предлагаем готовые модели от ведущих российских и европейских фабрик, а также двери по индивидуальным
+            размерам. При компании открыто собственное производство под брендом «Фабрика «Двери Нева», поэтому мы готовы
+            воплотить в жизнь любые идеи покупателей.</p>
+          <p>В нашем магазине дверей можно заказать не только дверные полотна, но купить комплектующие и воспользоваться
+            дополнительными услугами:</p>
+
+          <p>Выбирайте любую фурнитуру. Ручки, замки, шпингалеты, стопоры и другие аксессуары изготавливают в Италии,
+            поэтому они отвечают стандартам европейского качества. По желанию можем врезать дверной замок в межкомнатную
+            дверь.</p>
+          <p>Оформим проем и изготовим дверные системы.</p>
+          <p>Бригада мастеров выполнит все работы по демонтажу старой и установки новой входной группы. Если нет
+            строительных навыков, вы можете ошибиться в замерах, неправильно установить дверную коробку или стальную
+            входную дверь.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 mt-40">
+        <div class="video-box">
+          <a href="#" class="btn-play"><img src="img/play.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mt-40">
+        <div class="video-box">
+          <a href="#" class="btn-play"><img src="img/play.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--### SECTION seo-content END ###-->
 
 
 <!--### SECTION reviews ###-->
-<section class="reviews">
+<section class="reviews" id="reviews">
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6">
@@ -183,17 +696,121 @@
     </div>
 
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 col-md-6">
+        <div class="reviews-box">
+          <div class="reviews-box__avatar"><img src="img/reviews1.jpeg" alt=""></div>
+          <div class="reviews-box__body">
+            <div class="reviews-box__head">
+              <div class="reviews-box__name">
+                <h4>Имя Фамилия </h4>
+                <div class="date">30 Ноября 2021</div>
+              </div>
+              <ul class="list-stars my-ul">
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star-1.svg" alt=""></li>
+              </ul>
+            </div>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ull</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="reviews-box">
+          <div class="reviews-box__avatar"><img src="img/reviews2.jpeg" alt=""></div>
+          <div class="reviews-box__body">
+            <div class="reviews-box__head">
+              <div class="reviews-box__name">
+                <h4>Имя Фамилия </h4>
+                <div class="date">30 Ноября 2021</div>
+              </div>
+              <ul class="list-stars my-ul">
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star-1.svg" alt=""></li>
+              </ul>
+            </div>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 btn-group-wrap">
         <div class="btn-group">
           <a href="#" class="btn btn-accent">Читать все</a>
-          <a href="#" class="btn btn-border">Оставить отзыв</a>
+          <a href="#" class="btn btn-border btn-add-reviews">Оставить отзыв</a>
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-12">
-        <h3>Оставить отзыв</h3>
+
+    <div class="leave-feedback">
+      <div class="row">
+        <div class="col-12">
+          <h3>Оставить отзыв</h3>
+
+          <form method="post" class="form form-feedback">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+                <label>
+                  <input type="text" placeholder="Имя" name="name">
+                </label>
+                <label>
+                  <input type="text" placeholder="Телефон" name="phone">
+                </label>
+
+                <div class="estimate d-none d-md-block">
+                  <p>Оцените нас</p>
+
+                  <ul class="list-stars my-ul">
+                    <li><img src="img/star.svg" alt=""></li>
+                    <li><img src="img/star.svg" alt=""></li>
+                    <li><img src="img/star.svg" alt=""></li>
+                    <li><img src="img/star.svg" alt=""></li>
+                    <li><img src="img/star-1.svg" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-6">
+                <label><textarea name="message" placeholder="Комментарий"></textarea></label>
+              </div>
+
+              <div class="col-12 d-block d-md-none">
+                <div class="estimate">
+                  <p>Оцените нас</p>
+
+                  <ul class="list-stars my-ul">
+                    <li><img src="img/star.svg" alt=""></li>
+                    <li><img src="img/star.svg" alt=""></li>
+                    <li><img src="img/star.svg" alt=""></li>
+                    <li><img src="img/star.svg" alt=""></li>
+                    <li><img src="img/star-1.svg" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="btn-group">
+                  <button type="submit" class="btn btn-accent">Отправить</button>
+                  <a href="#" class="btn btn-border btn-hidden-reviews">Свернуть</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -315,44 +932,52 @@
       </div>
     </div>
 
-    <div class="row align-items-center">
-      <div class="col-12 col-md-6 col-lg-2">
-        <div class="partners-box"><img src="img/partners1.png" alt=""></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-2">
-        <div class="partners-box"><img src="img/partners2.png" alt=""></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-2">
-        <div class="partners-box"><img src="img/partners3.png" alt=""></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-2">
-        <div class="partners-box"><img src="img/partners4.png" alt=""></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-2">
-        <div class="partners-box"><img src="img/partners5.png" alt=""></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-2">
-        <div class="partners-box"><img src="img/partners6.png" alt=""></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-2">
-        <div class="partners-box"><img src="img/partners7.png" alt=""></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-2">
-        <div class="partners-box"><img src="img/partners8.png" alt=""></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-2">
-        <div class="partners-box"><img src="img/partners9.png" alt=""></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-2">
-        <div class="partners-box"><img src="img/partners10.png" alt=""></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-2">
-        <div class="partners-box"><img src="img/partners11.jpeg" alt=""></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-2">
-        <div class="partners-box"><img src="img/partners1.png" alt=""></div>
+    <div class="row partners-slider">
+      <div class="col-12">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="partners-box"><img src="img/partners1.png" alt=""></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="partners-box"><img src="img/partners2.png" alt=""></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="partners-box"><img src="img/partners3.png" alt=""></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="partners-box"><img src="img/partners4.png" alt=""></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="partners-box"><img src="img/partners5.png" alt=""></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="partners-box"><img src="img/partners6.png" alt=""></div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="partners-box"><img src="img/partners7.png" alt=""></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="partners-box"><img src="img/partners8.png" alt=""></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="partners-box"><img src="img/partners9.png" alt=""></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="partners-box"><img src="img/partners10.png" alt=""></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="partners-box"><img src="img/partners11.jpeg" alt=""></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="partners-box"><img src="img/partners1.png" alt=""></div>
+          </div>
+        </div>
       </div>
     </div>
+
+
   </div>
 </section>
 <!--### SECTION END ###-->
@@ -448,7 +1073,7 @@
   <div class="container">
     <div class="footer-top">
       <div class="row align-items-center">
-        <div class="col-12 col-md-5 col-lg-3">
+        <div class="col-12 col-md-4 col-lg-3">
           <a href="index.html" class="logo"><img src="img/logo-white.png" alt=""></a>
         </div>
 
