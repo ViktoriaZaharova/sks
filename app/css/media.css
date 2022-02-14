@@ -325,7 +325,11 @@
     margin: 24px auto 0; }
   .measurers-call__name {
     margin: 0 auto 25px;
-    text-align: center; } }
+    text-align: center; }
+  .estimate {
+    margin: 0 0 20px; }
+  .leave-feedback {
+    margin: 30px 0 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
