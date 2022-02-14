@@ -44,17 +44,54 @@ $('.certificates-slider').slick({
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 768,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 3,
+                centerMode: true,
+                variableWidth: true,
             }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
     ]
 });
+
+// slick active
+$(window).on('load resize', function () {
+    if ($(window).width() < 992) {
+        $('.news-slider:not(.slick-initialized)').slick({
+            slidesToShow: 2,
+            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon fill-none"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon fill-none"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+            appendArrows: '.news-slider__nav',
+            responsive: [
+
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+
+        $('.partners-slider:not(.slick-initialized)').slick({
+            slidesToShow: 3,
+            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon fill-none"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon fill-none"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+            variableWidth: true,
+
+        });
+    } else {
+        $(".news-slider.slick-initialized").slick("unslick");
+        $(".partners-slider.slick-initialized").slick("unslick");
+    }
+});
+// slick active
 
 $('.btn-tooltip').hover(function (e) {
     e.preventDefault();
@@ -62,9 +99,10 @@ $('.btn-tooltip').hover(function (e) {
 });
 
 $('.btn-burger').on('click', function () {
-   $('.fixed-block').fadeToggle();
+    $('.fixed-block').fadeToggle();
 });
 
 $('.btn-close').on('click', function () {
     $('.fixed-block').fadeOut();
 });
+

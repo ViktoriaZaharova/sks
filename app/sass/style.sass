@@ -313,12 +313,29 @@ span.bg-accent
   justify-content: center
   cursor: pointer
   background: transparent
+  stroke: #2E3649
 
 .slick-prev
   left: 16px
 
 .slick-next
   right: 16px
+
+.slider-nav
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: space-between
+  .slick-arrow
+    position: relative
+    top: 0
+    transform: none
+
+    left: 0
+    right: 0
+  .slick-prev
+    order: -1
+
 
 .tooltip-box
   box-shadow: 0 0 7px rgba(46, 54, 73, 0.26)

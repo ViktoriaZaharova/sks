@@ -78,6 +78,9 @@
     &__footer
       font-size: 12px
 
+  .measurers-call.callback .callback-img
+    left: -60px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1500px)
   header
@@ -95,7 +98,7 @@
     left: -50px
 
   .callback-wrapper
-    padding: 40px 0
+    padding: 40px 10px
 
   .product-card
     padding: 12px 15px
@@ -106,6 +109,10 @@
   footer
     .address-box
       font-size: 12px
+
+  .measurers-call.callback
+    .callback-wrapper
+      padding: 70px 20px 57px 0
 
 @media only screen and (max-width: 1400px)
   .fixed-block
@@ -155,6 +162,9 @@
 
   .category-box-min .category-box__title, .category-box .category-box__title
     font-size: 18px
+
+  .measurers-call.callback .callback-img
+    left: -65px
 
 @media only screen and (max-width: 1200px)
   .btn-add-basket
@@ -229,6 +239,53 @@
 
   footer
     background: #313131
+    .btn
+      margin: 32px auto 0
+
+  .btn-view-all
+    margin: 27px auto 0
+
+  .news
+    margin: 12px 0 47px
+    h2
+      margin: 0 auto
+      width: 100%
+      text-align: center
+
+  .news-slider__nav
+    margin: 0 auto 28px
+
+  .news-slider
+    margin: 0
+    .slick-list
+      margin: 0 -10px
+
+  .partners-col
+    flex: auto
+    width: 200px
+
+  .checkbox
+    margin: 18px 0 0
+
+  .stages-work-box
+    margin: 0 auto 24px
+
+  .stages-work h2
+    margin: 0 0 25px
+
+  .measurers-call.callback .form label
+    max-width: none
+
+  .measurers-call.callback .callback-wrapper
+    padding-right: 30px
+
+  .measurers-call.callback .callback-img
+    min-width: 400px
+    max-width: 400px
+    left: -35px
+
+  .callback h3
+    margin: 0 0 20px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -242,9 +299,127 @@
     padding: 40px 0 60px
     .logo
       margin: 0 auto 32px
+    .address-box
+      width: 100%
+      margin: 0 auto 17px
+      justify-content: center
+      text-align: center
+      font-size: 14px
+      &__text
+        padding: 0
+      &__icon
+        display: none !important
+      strong
+        color: #AAAAAA
+        padding: 0 0 0 22px
+        width: fit-content
+        margin: 0 auto
+        position: relative
+        &:before
+          content: ''
+          position: absolute
+          left: 0
+          top: -7px
+          background: url("../img/location.svg") no-repeat center
+            size: 100%
+          width: 15px
+          height: 23px
+    .phone
+      width: 100%
+      text-align: center
+      justify-content: center
+      color: #AAAAAA
+      font-size: 14px
+    .list-social
+      justify-content: center
+      margin: 0 auto 21px
+
+    .color-grey
+      color: #686868
+
+  .politics-links
+    text-align: center
+
+  .footer-center
+    margin: 41px 0 0
+
+  .footer-box
+    color: #AAAAAA
+
+  .footer-menu
+    li
+      a
+        color: #AAAAAA
+
+  .callback
+    padding: 0
+    margin: 50px 0 0
+
+  .callback-wrapper
+    padding: 33px 22px
+    h3
+      text-align: center
+      margin: 0 auto 22px
+      line-height: 35px
+
+
+  h3
+    font-size: 23px
+
+
+  label
+    margin: 0 0 13px
+
+  .form button
+    margin: 9px auto 0
+
+  .grade
+    justify-content: flex-start
+    margin: 0 0 5px
+
+  .grade-text
+    margin: 0 8px 0 0
+
+  .reviews
+    margin: 65px 0 42px
+    .btn-group
+      margin: 5px 0 0
+    h2
+      margin: 0 0 10px
+
+  .reviews-box
+    margin: 0 0 20px
+    .grade
+      margin: 0
+
+  .list-stars li
+    width: 27px
+    height: 24px
+
+  .certificates
+    margin: 68px 0 36px
+    h2
+      margin: 0 0 25px
+
+  .measurers-call.callback
+    padding: 0
+
+  .measurers-call.callback .callback-wrapper
+    padding: 34px 22px 37px
+
+  .measurers-call.callback .form button
+    position: relative
+    top: 0
+    right: 0
+    transform: none
+    margin: 24px auto 0
+
+  .measurers-call__name
+    margin: 0 auto 25px
+    text-align: center
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 576px)
+@media only screen and (max-width: 575px)
   .btn
     font-size: 12px
 
@@ -252,6 +427,123 @@
     .btn
       max-width: 131px
       height: 30px
+
+  .map
+    display: none
+
+  .news-card
+    &__body
+      padding: 26px 28px 26px 22px
+    &__footer
+      margin: 16px 0 0
+
+  .partners
+    margin: 45px 0 0
+
+  .partners-col
+    width: 143px
+
+  h2
+    margin: 0 0 35px
+
+  .partners-box
+    height: 71px
+    margin: 0 auto 35px
+
+  .stages-work-box
+    display: flex
+    align-items: center
+    text-align: left
+    &__icon
+      margin: 0
+      width: 47px
+      height: 41px
+      &:before
+        width: 33px
+        height: 33px
+
+    &__body
+      width: calc(100% - 47px)
+      padding: 0 0 0 33px
+    h3
+      font-size: 16px
+      margin: 0
+      max-width: none
+      line-height: 26px
+      br
+        display: none
+
+  .video-box
+    height: 182px
+
+  .mt-40
+    margin: 21px 0 0
+
+  .seo-content__img
+    height: 267px
+    width: calc(100% + 30px)
+    margin: 0 -15px 6px
+
+  .certificates-slider
+    .slick-slide
+      width: 200px
+      padding: 0 10px
+
+  .advantages-box
+    flex-direction: row
+    align-items: center
+    display: flex
+    text-align: left
+    margin: 0 0 22px
+
+    &__icon
+      width: 36px
+      height: 40px
+      margin: 0
+    &__text
+      width: calc(100% - 36px)
+      padding: 0 0 0 14px
+    .box-text
+      max-width: none
+      font-size: 12px
+    h4
+      font-size: 16px
+      margin: 0
+
+  .advantages
+    margin: 9px 0 20px
+
+  .category-box
+    height: auto
+    padding: 11px 26px
+    margin: 0 0 6px
+    &__icon
+      width: 57px
+      height: 58px
+      img
+        max-height: 100%
+    &__body
+      width: calc(100% - 57px)
+      padding: 0 0 0 30px
+    .box-text
+      font-size: 14px
+
+  .category-box-min
+    .category-box__icon
+      width: 57px
+      height: 58px
+    .category-box__body
+      width: calc(100% - 57px)
+      padding: 0 0 0 30px
+
+  .category-box__img
+    display: none
+
+  .category-box-vertical
+    padding: 14px 11px 14px 58px
+
+  .category
+    margin: 0 0 33px
 
 @media only screen and (max-width: 480px)
   header
@@ -270,6 +562,94 @@
       max-width: none
       margin: 0 0 16px
 
+  .reviews-box
+    margin: 65px 0 0
+    flex-direction: column
+    align-items: center
+    padding: 0 20px 23px
+    &__avatar
+      margin: -46px auto 6px
+      width: 91px
+      height: 91px
+      min-width: 91px
+    &__body
+      padding: 0
+      width: 100%
+    &__head
+      flex-direction: column
+      align-items: center
+
+    &__name
+      text-align: center
+      margin: 0 0 7px
+    .box-text
+      text-align: center
+
+  .reviews
+    .btn-group
+      margin: 25px auto 0
+
+  .new-price
+    font-size: 12px
+
+  .old-price
+    font-size: 8px
+    margin: 0 0 0 8px
+
+  .currency
+    font-size: 12px
+
+  .product-card
+    font-size: 12px
+    padding: 13px 12px 11px
+    &__photo
+      height: 123px
+    &__body
+      height: calc(100% - 123px)
+    &__title
+      font-size: 12px
+      line-height: 15px
+      margin: 0 0 10px
+      min-height: 45px
+    .price
+      line-height: 15px
+
+  .list-colors
+    margin: 0 0 7px
+    li
+      width: 15px
+      height: 15px
+      min-width: 15px
+      margin: 0 4px 0 0
+
+  .labels
+    top: 6px
+    left: 5px
+    font-size: 9px
+    li
+      margin: 0 0 3px
+      padding: 2px 6px
+      line-height: 11px
+
+  .btn-tooltip
+    width: 13px
+    height: 11px
+    top: 9px
+    right: 12px
+
+
+  .links-details
+    font-size: 10px
+
+  .mb-25
+    margin-bottom: 15px
+
+  .measurers-call.callback
+    margin: 43px 0 0
+    h2
+      margin: 0 0 22px
+
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
   .container
@@ -283,3 +663,14 @@
   .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
     padding: 0 4px
 
+  .news-slider
+    margin: 0
+    .slick-list
+      margin: 0 -4px
+
+  .partners-slider .slick-list
+    margin: 0 -4px
+
+  .grade
+    h4
+      font-size: 15px
