@@ -130,6 +130,19 @@ label
     background: url("../img/check.svg") no-repeat center
       size: 100%
 
+.select
+  height: 33px
+  border: 1px solid #E0E0E0
+    radius: 3px
+  appearance: none
+  padding: 0 23px 0 13px
+  color: #000000
+  font-size: 13px
+  font-weight: 500
+  background: #fff url("../img/arrow-bottom.svg") no-repeat calc(100% - 13px) center
+    size: 10px
+  cursor: pointer
+
 button, .btn
   outline: none
   transition: .3s ease
@@ -266,6 +279,9 @@ h4
 .text-decoration
   text-decoration: underline
 
+.color-green
+  color: $green
+
 .color-grey
   color: #BBBBBB
 
@@ -321,6 +337,9 @@ span.bg-accent
 .slick-next
   right: 16px
 
+.slick-disabled
+  display: none !important
+
 .slider-nav
   position: relative
   display: flex
@@ -358,17 +377,33 @@ span.bg-accent
   .tooltip-box
     color: #B60101
 
-.tooltip-arrow
-  display: none
 
-.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before
-  display: none !important
+.breadcrumb
+  width: 100%
+  background: transparent
+  border: none
+    radius: 0
+  margin: 0 0 32px
+  padding: 0
+  color: #858585
+  font-size: 13px
 
-.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before
-  display: none !important
+.breadcrumb-item
+  a
+    color: #858585
+    display: flex
+    align-items: center
+    &:after
+      content: '|'
+      color: #5BBE2C
+      margin: 0 8px
+      display: inline-block
+    &:hover
+      color: $green
+  + .breadcrumb-item
+      padding: 0
+      &:before
+        display: none
 
-.bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before
-  display: none !important
-
-.bs-tooltip-auto[x-placement^=right] .arrow::before, .bs-tooltip-right .arrow::before
-  display: none !important
+.dropdown-item.active, .dropdown-item:active
+  background: $green

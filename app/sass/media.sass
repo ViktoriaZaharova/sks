@@ -114,6 +114,15 @@
     .callback-wrapper
       padding: 70px 20px 57px 0
 
+  .product-preview__item
+    height: 80px
+
+  .product-gallery__item
+    height: 400px
+
+  .tab-content .list-characteristics span
+    min-width: 120px
+
 @media only screen and (max-width: 1400px)
   .fixed-block
     display: none
@@ -165,6 +174,9 @@
 
   .measurers-call.callback .callback-img
     left: -65px
+
+  .tab-content .list-characteristics span
+    min-width: 180px
 
 @media only screen and (max-width: 1200px)
   .btn-add-basket
@@ -286,6 +298,13 @@
 
   .callback h3
     margin: 0 0 20px
+
+  .tab-content .list-characteristics
+    max-width: none
+    margin: 0 0 18px
+    span
+      min-width: auto
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -424,6 +443,54 @@
   .leave-feedback
     margin: 30px 0 0
 
+  .tab-content .list-characteristics
+    max-width: none
+
+  .nav-tabs-product
+    display: none
+
+  .dropdown-tabs
+    display: block
+    margin: 22px 0 0
+
+  .tab-content
+    padding: 19px 0 0
+
+  .callback-v2
+    margin: 35px 0 50px
+
+  .certificates-v2
+    margin: 60px 0
+
+  .sales-banner
+    height: 73px
+    font-size: 18px
+
+  .breadcrumb
+    margin: 0 0 23px
+
+  .page-product
+    h1
+      margin: 0 0 7px
+      font-size: 18px
+
+  .rating-product
+    .list-stars
+      margin: 0
+
+  .product-wrapper
+    margin: 25px 0 27px
+
+  .variables-product
+    .btn
+      margin: 0 8px 0 0
+      &:last-child
+        margin: 0
+
+  .btn-comparison
+    margin: 0 auto 20px
+    justify-content: center
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px)
   .btn
@@ -550,6 +617,37 @@
 
   .category
     margin: 0 0 33px
+
+  .amount
+    width: 100%
+    justify-content: center
+    display: none
+
+  .btn-comparison
+    width: 100%
+    margin: 27px auto 0
+    font-size: 13px
+    .btn-text
+      max-width: none
+
+  .variables-product
+    align-items: center
+    justify-content: center
+    .btn
+      padding: 0 10px
+      max-width: 160px
+      &:last-child
+        margin: 0
+
+  .product-preview
+    display: none
+
+  .product-gallery
+    width: 100%
+    &__item
+      height: 342px
+
+
 
 @media only screen and (max-width: 480px)
   header

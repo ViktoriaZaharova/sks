@@ -509,7 +509,12 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    overflow: hidden; }
+    overflow: hidden;
+    background: #5BBE2C;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold; }
     .reviews-box__avatar img {
       width: 100%;
       height: 100%;
