@@ -120,7 +120,7 @@
       content: '';
       position: absolute;
       left: auto;
-      bottom: 3px;
+      top: 13px;
       width: 100%;
       height: 1px;
       border-bottom: 1px dotted #000; }
@@ -411,5 +411,13 @@
   .dropdown-tabs .btn-secondary:not(:disabled):not(.disabled).active:focus, .dropdown-tabs .btn-secondary:not(:disabled):not(.disabled):active:focus, .dropdown-tabs .show > .btn-secondary.dropdown-toggle:focus {
     -webkit-box-shadow: none;
             box-shadow: none; }
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.dropdown-tabs .dropdown-item.active {
+  background: transparent;
+  color: #000; }
 
 /*==========  product page end  ==========*/
