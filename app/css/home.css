@@ -251,6 +251,21 @@
     background: #000000; }
   .list-colors__grey {
     background: #D9D9D9; }
+  .list-colors__gold {
+    background: #CD9D9D; }
+  .list-colors__green {
+    background: #439E68; }
+  .list-colors__1 {
+    background: #AB3636; }
+  .list-colors__2 {
+    background: #522222; }
+  .list-colors__3 {
+    background: #643D3D; }
+  .list-colors__white {
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC; }
+  .list-colors__4 {
+    background: #C4C4C4; }
 
 .price {
   display: -webkit-box;

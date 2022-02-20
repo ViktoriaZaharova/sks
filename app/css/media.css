@@ -238,7 +238,19 @@
   .map-box {
     height: 472px;
     width: calc(100% + 20px);
-    margin: 24px -10px 0; } }
+    margin: 24px -10px 0; }
+  .instruction-img {
+    margin: 0 0 40px; }
+  .instruction {
+    margin: 60px 0 30px; }
+  .orders-text .video-box {
+    margin: 30px 0 0; }
+  .orders-text {
+    margin: 0 0 68px; }
+  .btn-load {
+    margin: 15px auto 0; }
+  .page-catalog .pagination-nav {
+    margin: 30px auto 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -453,7 +465,29 @@
   .how-to .video-box {
     margin: 0 auto 48px; }
   .table-price-delivery tbody td:last-child {
-    display: block; } }
+    display: block; }
+  .page-catalog h1 {
+    margin: 0 0 15px; }
+  .page-catalog .product-card .links-details {
+    font-size: 10px;
+    line-height: 12px; }
+  .page-catalog .sales-banner-horizontal {
+    margin: 0;
+    max-width: none;
+    height: 100%; }
+  .page-catalog .grade-text {
+    margin: 0 11px 0 0; }
+  .category-catalog-slider {
+    margin: 16px auto 17px; }
+    .category-catalog-slider .slick-prev {
+      left: 0; }
+    .category-catalog-slider .slick-next {
+      right: 0; }
+    .category-catalog-slider .slick-arrow {
+      width: 10px;
+      height: 20px; }
+    .category-catalog-slider .slick-list {
+      margin: 0 -10px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
@@ -613,7 +647,9 @@
     .pagination li:last-child {
       display: block; }
   .images-wrapper__img {
-    height: 194px; } }
+    height: 194px; }
+  .instruction-img {
+    height: 231px; } }
 
 @media only screen and (max-width: 480px) {
   header .container {
@@ -755,4 +791,8 @@
   .grade h4 {
     font-size: 15px; }
   .partners-box {
-    padding: 0 10px; } }
+    padding: 0 10px; }
+  .category-catalog-slider {
+    margin: 16px 0 17px; }
+    .category-catalog-slider .slick-list {
+      margin: 0; } }

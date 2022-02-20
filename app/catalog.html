@@ -1,0 +1,2075 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>СКС - дверная база</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/service.css">
+  <link rel="stylesheet" href="css/contacts.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/catalog.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="fixed-block">
+  <div class="btn-close">
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#close"></use>
+    </svg>
+  </div>
+  <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+  <div class="fixed-block__head">
+
+    <div class="contacts-block">
+      <a href="tel:+78162902808" class="phone">+7 (816) 290-28-08</a>
+      <div class="schedule">Пн-Пт 9-19 Сб-Вс 10-17</div>
+    </div>
+    <div class="messengers">
+      <a href="#" class="messenger-box"><img src="img/whatsapp.png" alt=""></a>
+      <a href="#" class="messenger-box"><img src="img/viber.png" alt=""></a>
+      <a href="#" class="color-grey text-decoration">написать нам</a>
+    </div>
+  </div>
+
+  <form method="post" class="form-search">
+    <label>
+      <input type="text" placeholder="Поиск" name="search" required>
+      <button type="submit" class="form-search__btn">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+    </label>
+  </form>
+
+  <ul class="menu-products my-ul">
+    <li><a href="catalog.html">Межкомнатные двери</a></li>
+    <li><a href="catalog.html">Входные двери</a></li>
+    <li><a href="catalog.html">Раздвижные двери</a></li>
+    <li><a href="catalog.html">Скрытые двери</a></li>
+    <li><a href="catalog.html">Стеклянные двери</a></li>
+    <li><a href="catalog.html">Фурнитура</a></li>
+    <li><a href="catalog.html">Перегородки</a></li>
+    <li><a href="catalog.html">Двери спец. назначения</a></li>
+  </ul>
+
+  <div class="fixed-block__bottom">
+    <ul class="fixed-block-menu my-ul">
+      <li><a href="service.html">Услуги</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="#sales" class="go_to">Акции</a></li>
+      <li><a href="#">Купить оптом</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+
+
+    <div class="address-box">
+      <div class="address-box__icon d-flex">
+        <svg class="svg-icon fill-none">
+          <use xlink:href="img/sprite.svg#location"></use>
+        </svg>
+      </div>
+      <div class="address-box__text">
+        <strong>г. Великий Новгород</strong> ул. Нехинская 55 д (пер. Полевой)
+      </div>
+    </div>
+
+
+    <ul class="list-social my-ul">
+      <li><a href="#">
+        <img src="img/vk.svg" alt="">
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#instagram"></use>
+        </svg>
+      </a></li>
+    </ul>
+  </div>
+
+  <a href="#" class="btn btn-accent btn-call" data-toggle="modal" data-target="#callbackModal">
+    Бесплатный вызов замерщика
+  </a>
+</div>
+
+<div class="filter-mobile">
+  <div class="sidebar">
+    <div class="sidebar-head">
+      <h3>Фильтры</h3>
+
+      <div class="sidebar-close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></div>
+    </div>
+
+    <a href="#" class="btn-clear-filter">Очистить фильтры</a>
+
+    <div class="accordion accordion-sidebar" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne" data-toggle="collapse"
+             data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h4>Материал</h4>
+          <a href="#" class="links-clear color-grey text-decoration">Сбросить</a>
+
+          <div class="collapse-icon fill-none">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#bottom"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <ul class="list-checkbox my-ul">
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check" checked>
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Беленый дуб
+</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Белый и светлый
+</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Бетон светлый
+</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Бетон темный
+</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Венге
+</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Дуб натуральный
+</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Европейский дуб
+</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Зеленый
+</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Капучино
+</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Коричневый</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Беленый дуб</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo" data-toggle="collapse"
+             data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <h4>Цена</h4>
+          <a href="#" class="links-clear color-grey text-decoration">Сбросить</a>
+          <div class="collapse-icon">
+            <svg class="svg-icon fill-none">
+              <use xlink:href="img/sprite.svg#bottom"></use>
+            </svg>
+          </div>
+        </div>
+        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="slider-range"></div>
+            <div class="range_val">
+              <div class="inp-group">
+                <span class="inp-group__text">от</span>
+                <input type="text" name="dec" class="dec1">
+              </div>
+              <div class="inp-group">
+                <span class="inp-group__text">до</span>
+                <input type="text" name="dec" class="dec2">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingThree" data-toggle="collapse"
+             data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <h4>Цвет</h4>
+          <a href="#" class="links-clear color-grey text-decoration">Сбросить</a>
+          <div class="collapse-icon">
+            <svg class="svg-icon fill-none">
+              <use xlink:href="img/sprite.svg#bottom"></use>
+            </svg>
+          </div>
+        </div>
+        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
+             data-parent="#accordionExample">
+          <div class="card-body">
+            <ul class="list-colors my-ul">
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check" checked>
+                  <span class="checkbox-custom-my list-colors__yellow"></span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom-my list-colors__1"></span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom-my list-colors__2"></span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom-my list-colors__green"></span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom-my list-colors__3"></span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom-my list-colors__black"></span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom-my list-colors__white"></span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom-my list-colors__4"></span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFour" data-toggle="collapse"
+             data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <h4>Бренды</h4>
+          <div class="collapse-icon">
+            <svg class="svg-icon fill-none">
+              <use xlink:href="img/sprite.svg#bottom"></use>
+            </svg>
+          </div>
+        </div>
+        <div id="collapseFour" class="collapse show" aria-labelledby="headingFour"
+             data-parent="#accordionExample">
+          <div class="card-body">
+            <ul class="list-checkbox my-ul">
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check" checked>
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Беленый дуб
+</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Белый и светлый
+</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Бетон светлый
+</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Бетон темный
+</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Венге
+</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Дуб натуральный
+</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Европейский дуб
+</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Зеленый
+</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Капучино
+</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Коричневый</span>
+                </label>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="btn btn-accent btn-apply">Применить фильтры</a>
+  </div>
+</div>
+
+<!--### HEADER ###-->
+<header>
+  <div class="container">
+    <div class="btn-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="header-top">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="address-box">
+            <div class="address-box__icon d-flex">
+              <svg class="svg-icon fill-none">
+                <use xlink:href="img/sprite.svg#location"></use>
+              </svg>
+            </div>
+            <div class="address-box__text">
+              <strong>г. Великий Новгород</strong> ул. Нехинская 55 д (пер. Полевой)
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 d-flex flex-wrap align-items-center">
+          <div class="messengers">
+            <a href="#" class="messenger-box"><img src="img/whatsapp.png" alt=""></a>
+            <a href="#" class="messenger-box"><img src="img/viber.png" alt=""></a>
+          </div>
+
+          <a href="#" class="color-grey text-decoration">написать нам</a>
+          <a href="tel:+78162902808" class="phone">+7 (816) 290-28-08</a>
+          <div class="schedule">Пн-Пт 9-19 Сб-Вс 10-17</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="row align-items-center">
+
+        <div class="col-12 col-lg-8 d-none d-lg-block">
+          <ul class="menu my-ul">
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="#sales" class="go_to">Акции</a></li>
+            <li><a href="wholesale.html">Купить оптом</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-lg-4 d-flex flex-wrap align-items-center">
+
+          <a href="index.html" class="logo"><img src="img/logo-white.png" alt=""></a>
+
+          <a href="#" class="btn-search d-flex">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </a>
+          <div class="basket-box dropdown">
+            <a href="#" class="btn-basket d-flex dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+               aria-expanded="false">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#basket"></use>
+              </svg>
+
+              <span class="btn-basket__val">11</span>
+            </a>
+            <div class="dropdown-menu">
+              <span class="dropdown-box-basket">
+              <span class="dropdown-box-basket__icon d-flex"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#basket"></use></svg></span>
+              <span class="dropdown-box-basket__body">
+               В корзину добавлен
+                  <strong>1 товар</strong>
+              </span>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--### HEADER end ###-->
+
+<div class="page page-catalog">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Двери межкомнатные</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-3 d-none d-lg-block">
+        <div class="sidebar">
+            <h3>Фильтры</h3>
+
+
+          <div class="accordion accordion-sidebar" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne" data-toggle="collapse"
+                   data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h4>Материал</h4>
+                <a href="#" class="links-clear color-grey text-decoration">Сбросить</a>
+
+                <div class="collapse-icon fill-none">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#bottom"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <ul class="list-checkbox my-ul">
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check" checked>
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Беленый дуб
+</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Белый и светлый
+</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Бетон светлый
+</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Бетон темный
+</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Венге
+</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Дуб натуральный
+</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Европейский дуб
+</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Зеленый
+</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Капучино
+</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Коричневый</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Беленый дуб</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo" data-toggle="collapse"
+                   data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h4>Цена</h4>
+                <a href="#" class="links-clear color-grey text-decoration">Сбросить</a>
+                <div class="collapse-icon">
+                  <svg class="svg-icon fill-none">
+                    <use xlink:href="img/sprite.svg#bottom"></use>
+                  </svg>
+                </div>
+              </div>
+              <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="slider-range"></div>
+                  <div class="range_val">
+                    <div class="inp-group">
+                      <span class="inp-group__text">от</span>
+                      <input type="text" name="dec" class="dec1">
+                    </div>
+                    <div class="inp-group">
+                      <span class="inp-group__text">до</span>
+                      <input type="text" name="dec" class="dec2">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingThree" data-toggle="collapse"
+                   data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h4>Цвет</h4>
+                <a href="#" class="links-clear color-grey text-decoration">Сбросить</a>
+                <div class="collapse-icon">
+                  <svg class="svg-icon fill-none">
+                    <use xlink:href="img/sprite.svg#bottom"></use>
+                  </svg>
+                </div>
+              </div>
+              <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
+                   data-parent="#accordionExample">
+                <div class="card-body">
+                  <ul class="list-colors my-ul">
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check" checked>
+                        <span class="checkbox-custom-my list-colors__yellow"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom-my list-colors__1"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom-my list-colors__2"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom-my list-colors__green"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom-my list-colors__3"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom-my list-colors__black"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom-my list-colors__white"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom-my list-colors__4"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour" data-toggle="collapse"
+                   data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <h4>Бренды</h4>
+                <div class="collapse-icon">
+                  <svg class="svg-icon fill-none">
+                    <use xlink:href="img/sprite.svg#bottom"></use>
+                  </svg>
+                </div>
+              </div>
+              <div id="collapseFour" class="collapse show" aria-labelledby="headingFour"
+                   data-parent="#accordionExample">
+                <div class="card-body">
+                  <ul class="list-checkbox my-ul">
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check" checked>
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Беленый дуб
+</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Белый и светлый
+</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Бетон светлый
+</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Бетон темный
+</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Венге
+</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Дуб натуральный
+</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Европейский дуб
+</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Зеленый
+</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Капучино
+</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Коричневый</span>
+                      </label>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sales-banner sales-banner-horizontal">
+            <div class="sales-banner__title">Акция</div>
+          </div>
+
+          <div class="masters-card">
+            <div class="masters-card__photo"></div>
+            <div class="masters-card__body">
+              <h3>Бесплатный вызов замерщика!</h3>
+              <div class="box-text">
+                <p>Василий, замерщик
+                  и дизайнер</p>
+              </div>
+
+              <form method="post" class="form-masters">
+                <label><input type="text" placeholder="Номер телефона" name="phone"></label>
+                <button type="submit" class="btn btn-accent">Вызвать замерщика!</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="certificate-sidebar">
+            <h3>Сертификаты</h3>
+
+            <div class="certificate-sidebar-slider">
+              <div class="slide">
+                <a href="#" class="certificates-box" data-fancybox="image"></a>
+              </div>
+              <div class="slide">
+                <a href="#" class="certificates-box" data-fancybox="image"></a>
+              </div>
+              <div class="slide">
+                <a href="#" class="certificates-box" data-fancybox="image"></a>
+              </div>
+              <div class="slide">
+                <a href="#" class="certificates-box" data-fancybox="image"></a>
+              </div>
+              <div class="slide">
+                <a href="#" class="certificates-box" data-fancybox="image"></a>
+              </div>
+              <div class="slide">
+                <a href="#" class="certificates-box" data-fancybox="image"></a>
+              </div>
+              <div class="slide">
+                <a href="#" class="certificates-box" data-fancybox="image"></a>
+              </div>
+              <div class="slide">
+                <a href="#" class="certificates-box" data-fancybox="image"></a>
+              </div>
+              <div class="slide">
+                <a href="#" class="certificates-box" data-fancybox="image"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-9">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h1>Двери межкомнатные</h1>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="grade">
+              <div class="grade-text">
+                <p>325 товаров в категории</p>
+              </div>
+              <ul class="list-stars my-ul">
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star-1.svg" alt=""></li>
+                <li><img src="img/star-0.svg" alt=""></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row category-catalog-slider">
+          <div class="col-12 col-md-4">
+            <div class="category-catalog-item">
+              <div class="category-catalog-item__img"></div>
+              <div class="category-catalog-item__body">
+                <h4>Название</h4>
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="category-catalog-item">
+              <div class="category-catalog-item__img"></div>
+              <div class="category-catalog-item__body">
+                <h4>Название</h4>
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="category-catalog-item">
+              <div class="category-catalog-item__img"></div>
+              <div class="category-catalog-item__body">
+                <h4>Название</h4>
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-6 col-lg-12 d-none d-lg-block">
+            <div class="sorting-box">
+              <p>Сортировать по:</p>
+
+              <a href="#" class="sorting-links active">
+                <span class="sorting-links__text">Популярности</span>
+                <span class="sorting-links__icon"><svg class="svg-icon fill-none"><use
+                    xlink:href="img/sprite.svg#bottom"></use></svg></span>
+              </a>
+              <a href="#" class="sorting-links">
+                <span class="sorting-links__text">Цене</span>
+                <span class="sorting-links__icon"><svg class="svg-icon fill-none"><use
+                    xlink:href="img/sprite.svg#bottom"></use></svg></span>
+              </a>
+              <a href="#" class="sorting-links">
+                <span class="sorting-links__text">Обновлению</span>
+                <span class="sorting-links__icon"><svg class="svg-icon fill-none"><use
+                    xlink:href="img/sprite.svg#bottom"></use></svg></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-6 d-block d-lg-none">
+            <select name="select" class="select select-sorting">
+              <option value="Популярности">Популярности</option>
+              <option value="Цене">Цене</option>
+              <option value="Обновлению">Обновлению</option>
+            </select>
+          </div>
+
+          <div class="col-6 d-block d-lg-none">
+            <a href="#" class="btn-filter">
+              <span class="btn-filter__text">Фильтры</span>
+              <span class="btn-filter__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#filter"></use></svg></span>
+            </a>
+          </div>
+
+          <div class="col-12 d-block d-lg-none">
+            <ul class="result-filter my-ul">
+              <li>
+                <span>Аксессуары для дверей</span>
+                <a href="#" class="result-filter__close">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <span>Бренд</span>
+                <a href="#" class="result-filter__close">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <span>Бренд</span>
+                <a href="#" class="result-filter__close">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+              <ul class="labels my-ul">
+                <li class="labels-item bg-accent">Новинка</li>
+                <li class="labels-item bg-red">Хит продаж</li>
+              </ul>
+
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452</a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__brown"></li>
+                  <li class="list-colors__black"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">26 600 <span class="currency">руб</span></div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+
+                  <a href="#" class="color-grey links-details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+              <ul class="labels my-ul">
+                <li class="labels-item bg-red">-30%</li>
+              </ul>
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452</a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__grey"></li>
+                  <li class="list-colors__yellow"></li>
+                  <li class="list-colors__brown"></li>
+                  <li class="list-colors__black"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">150 600 <span class="currency">руб</span></div>
+                  <div class="old-price">250 000 руб</div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span></a>
+
+                  <a href="#" class="color-grey links-details ">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+              <ul class="labels my-ul">
+                <li class="labels-item bg-red">-30%</li>
+              </ul>
+
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь межкомнатная Ф5674</a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__grey"></li>
+                  <li class="list-colors__yellow"></li>
+                  <li class="list-colors__brown"></li>
+                  <li class="list-colors__black"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">150 600 <span class="currency">руб</span></div>
+                  <div class="old-price">250 000 руб</div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span></a>
+
+                  <a href="#" class="color-grey links-details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452 и еще текст</a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__brown"></li>
+                  <li class="list-colors__black"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">26 600 <span class="currency">руб</span></div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+
+                  <a href="#" class="color-grey links-details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452 и еще текст</a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__brown"></li>
+                  <li class="list-colors__black"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">26 600 <span class="currency">руб</span></div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+
+                  <a href="#" class="color-grey links-details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452 </a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__gold"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">6 600 <span class="currency">руб</span></div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+
+                  <a href="#" class="color-grey links-details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+              <ul class="labels my-ul">
+                <li class="labels-item bg-accent">Новинка</li>
+                <li class="labels-item bg-red">Хит продаж</li>
+              </ul>
+
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452</a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__brown"></li>
+                  <li class="list-colors__black"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">26 600 <span class="currency">руб</span></div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+
+                  <a href="#" class="color-grey links-details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+              <ul class="labels my-ul">
+                <li class="labels-item bg-red">-30%</li>
+              </ul>
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452</a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__grey"></li>
+                  <li class="list-colors__yellow"></li>
+                  <li class="list-colors__brown"></li>
+                  <li class="list-colors__black"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">150 600 <span class="currency">руб</span></div>
+                  <div class="old-price">250 000 руб</div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span></a>
+
+                  <a href="#" class="color-grey links-details ">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="sales-banner sales-banner-horizontal">
+              <div class="sales-banner__title">Акция</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452 и еще текст</a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__brown"></li>
+                  <li class="list-colors__black"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">26 600 <span class="currency">руб</span></div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+
+                  <a href="#" class="color-grey links-details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452 и еще текст</a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__brown"></li>
+                  <li class="list-colors__black"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">26 600 <span class="currency">руб</span></div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+
+                  <a href="#" class="color-grey links-details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452 </a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__gold"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">6 600 <span class="currency">руб</span></div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+
+                  <a href="#" class="color-grey links-details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+              <ul class="labels my-ul">
+                <li class="labels-item bg-accent">Новинка</li>
+                <li class="labels-item bg-red">Хит продаж</li>
+              </ul>
+
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452</a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__brown"></li>
+                  <li class="list-colors__black"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">26 600 <span class="currency">руб</span></div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+
+                  <a href="#" class="color-grey links-details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+              <ul class="labels my-ul">
+                <li class="labels-item bg-red">-30%</li>
+              </ul>
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452</a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__grey"></li>
+                  <li class="list-colors__yellow"></li>
+                  <li class="list-colors__brown"></li>
+                  <li class="list-colors__black"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">150 600 <span class="currency">руб</span></div>
+                  <div class="old-price">250 000 руб</div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span></a>
+
+                  <a href="#" class="color-grey links-details ">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+              <ul class="labels my-ul">
+                <li class="labels-item bg-red">-30%</li>
+              </ul>
+
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь межкомнатная Ф5674</a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__grey"></li>
+                  <li class="list-colors__yellow"></li>
+                  <li class="list-colors__brown"></li>
+                  <li class="list-colors__black"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">150 600 <span class="currency">руб</span></div>
+                  <div class="old-price">250 000 руб</div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span></a>
+
+                  <a href="#" class="color-grey links-details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452 и еще текст</a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__brown"></li>
+                  <li class="list-colors__black"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">26 600 <span class="currency">руб</span></div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+
+                  <a href="#" class="color-grey links-details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452 и еще текст</a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__brown"></li>
+                  <li class="list-colors__black"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">26 600 <span class="currency">руб</span></div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+
+                  <a href="#" class="color-grey links-details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4 mb-25">
+            <div class="product-card">
+
+              <button class="btn-tooltip btn-tooltip-green">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#basket-icon"></use>
+                </svg>
+                <span class="tooltip-box">Есть на складе</span>
+              </button>
+
+              <a href="product.html" class="product-card__photo"><img src="img/product1.png" alt=""></a>
+              <div class="product-card__body">
+                <a href="product.html" class="product-card__title">Дверь красивая межкомнатная Ф567452 </a>
+                <ul class="list-colors my-ul">
+                  <li class="list-colors__gold"></li>
+                </ul>
+
+                <div class="price">
+                  <div class="new-price">6 600 <span class="currency">руб</span></div>
+                </div>
+
+                <div class="product-card__footer">
+                  <a href="#" class="btn btn-accent btn-add-basket">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#basket"></use></svg></span>
+                    <span class="btn-text">В корзину</span>
+                  </a>
+
+                  <a href="#" class="color-grey links-details">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 d-block d-lg-none">
+            <a href="#" class="btn btn-load btn-border">Загрузить еще</a>
+          </div>
+
+          <div class="col-12 col-lg-8">
+            <nav class="pagination-nav">
+              <ul class="pagination">
+                <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                <li class="page-item"><a class="page-link btn btn-border" href="#">Дальше</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <a href="#" class="btn btn-load btn-border">Показать еще</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--### SECTION  ###-->
+<section class="instruction">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-7">
+        <div class="instruction-content">
+          <h2>Как выбрать межкомнатную дверь</h2>
+          <div class="box-text">
+            <p>В каталоге с сотнями товарных позиций вы найдете много подходящих
+              вариантов для своего дома. У нас есть из чего выбрать: недорогие
+              межкомнатные двери от более 10 производителей представлены в
+              большом ассортименте. Основные параметры, влияющие на выбор межкомнатной двери:</p>
+
+            <ul class="list-check my-ul">
+              <li>стиль интерьера;
+              </li>
+              <li>материал двери
+              </li>
+              <li>способ открывания;
+              </li>
+              <li>цена двери;
+              </li>
+              <li>эксплуатационные характеристики;
+              </li>
+              <li>срок гарантии;
+              </li>
+              <li>производитель.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="instruction-img"></div>
+      </div>
+
+      <div class="col-12">
+        <div class="box-text">
+          <p>При покупке двери важно обратить внимание на качество изделия: материал, фурнитуру. Немаловажный фактор
+            выбора для многих покупателей – это внешний вид изделия. Как правило, дверь подбирается под интерьер. Играет
+            роль цветовая гамма обстановки, стиль мебели, материалы отделки. Многие модели дверей у нас отличаются
+            оригинальным визуальным исполнением с включением декоративных элементов. Какой бы интерьер у вас ни был, вы
+            найдете лучший вариант дверей в комнату. Дизайнеры предлагают множество вариаций. Сдержанные сплошные
+            полотна, стеклянные вставки, рисунки и орнаменты – все это есть в наших дверях. 90% всех изделий в наличии.
+            Если вы хотите посмотреть примеры дверей перед покупкой, загляните в один из наших магазинов в
+            Санкт-Петербурге. Адреса указаны на сайте. В шоу-румах вы найдете образцы межкомнатных дверей, дверных
+            ручек, каталоги с примерами</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION END ###-->
+
+<!--### SECTION  ###-->
+<section class="news news-v2" id="news">
+  <div class="container">
+    <div class="row d-flex d-lg-none">
+      <div class="col-12 col-lg-8">
+        <div class="slider-nav news-slider__nav">
+          <h2>Новости</h2>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-4 d-none d-lg-block">
+        <a href="#" class="btn btn-border btn-view-all">Еще новости</a>
+      </div>
+    </div>
+
+    <div class="row news-slider">
+      <div class="col-12 col-lg-4">
+        <div class="news-card">
+          <div class="news-card__img"></div>
+          <div class="news-card__body">
+            <a href="#" class="news-card__title">Название статьи и еще пару</a>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempo</p>
+            </div>
+            <div class="news-card__footer">
+              <a href="#" class="links-grey">Подробнее</a>
+
+              <div class="date">2 декабря 2021</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="news-card">
+          <div class="news-card__img"></div>
+          <div class="news-card__body">
+            <a href="#" class="news-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempo</a>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo Lorem </p>
+            </div>
+            <div class="news-card__footer">
+              <a href="#" class="links-grey">Подробнее</a>
+
+              <div class="date">2 декабря 2021</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="news-card news-card-v2">
+          <div class="news-card__body">
+            <a href="#" class="news-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempo</a>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo Lorem
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempoLorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempo Lorem ipsum dolor sit </p>
+            </div>
+            <div class="news-card__footer">
+              <a href="#" class="links-grey">Подробнее</a>
+
+              <div class="date">2 декабря 2021</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 d-block d-lg-none">
+        <a href="#" class="btn btn-border btn-view-all">Еще новости</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION END ###-->
+
+<section class="orders-text">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Покупка межкомнатной двери </h2>
+
+        <div class="box-text">
+          <p>В нашем магазине представлены межкомнатные двери в СПб от производителя с установкой:</p>
+          <ul class="list-check my-ul">
+            <li>классические (одинарное дверное полотно);
+            </li>
+            <li>двойные распашные
+            </li>
+            <li>откатные (двери-купе);
+            </li>
+            <li>складные двери-книжки;
+            </li>
+            <li>невидимки (со скрытой дверной коробкой).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-7">
+        <div class="orders-text-content">
+          <p>Большинство изделий в каталоге можно купить в одном из трех вариантов: классические, двойные, откатные.
+            Материалы, из которых изготовлены двери: натуральный шпон, массив дерева, экошпон. Также в наличии
+            эмалированные двери.</p>
+          <p>Для установки дверей под ключ в Санкт-Петербурге сделайте заказ на сайте или позвоните. Мы отправим к вам
+            специалиста, он произведет замеры, при необходимости захватит каталог дверей и договор. После заказа
+            привезем готовое изделие и произведем монтаж. Купить межкомнатные двери в «МК Групп» – быстро и
+            недорого!</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5 d-none d-sm-block">
+        <div class="video-box">
+          <a href="#" class="btn-play"><img src="img/play.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--### FOOTER  ###-->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-4 col-lg-3">
+          <a href="index.html" class="logo"><img src="img/logo-white.png" alt=""></a>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-9 d-flex flex-wrap align-items-center">
+          <div class="address-box">
+            <div class="address-box__icon d-flex">
+              <svg class="svg-icon fill-none">
+                <use xlink:href="img/sprite.svg#location"></use>
+              </svg>
+            </div>
+            <div class="address-box__text">
+              <strong>г. Великий Новгород</strong> ул. Нехинская 55 д (пер. Полевой)
+            </div>
+          </div>
+          <a href="tel:+78162902808" class="phone">
+            <span class="phone-icon d-flex"><svg class="svg-icon fill-none"><use
+                xlink:href="img/sprite.svg#phone"></use></svg></span>
+            +7 (816) 290-28-08</a>
+
+          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#callbackModal">Бесплатный вызов
+            замерщика</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-center">
+      <div class="row">
+        <div class="col-6 col-lg-3">
+          <div class="footer-box">
+            <h4>КАТАЛОГ</h4>
+            <ul class="footer-menu my-ul">
+              <li><a href="catalog.html">Входные двери
+              </a></li>
+              <li><a href="catalog.html">Межкомнатные двери
+              </a></li>
+              <li><a href="catalog.html">Противопожарные двери
+              </a></li>
+              <li><a href="catalog.html">Специальные двери
+              </a></li>
+              <li><a href="catalog.html">Банные двери
+              </a></li>
+              <li><a href="catalog.html">Фурнитура
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="footer-box">
+            <h4>О КОМПАНИИ</h4>
+            <ul class="footer-menu my-ul">
+              <li><a href="#">Акции
+              </a></li>
+              <li><a href="contacts.html">Контакты
+              </a></li>
+              <li><a href="#">Оплата
+              </a></li>
+              <li><a href="#">Доставка
+              </a></li>
+              <li><a href="#">Наши работы
+              </a></li>
+              <li><a href="#reviews" class="go_to">Отзывы
+              </a></li>
+              <li><a href="#">Скидки от партнеров
+              </a></li>
+              <li><a href="#">Возврат
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="footer-box">
+            <ul class="footer-menu my-ul">
+              <li><a href="#news" class="go_to">Новости
+              </a></li>
+              <li><a href="#">Вакансии
+              </a></li>
+              <li><a href="#">Оптом</a></li>
+              <li><a href="#">Рассрочка
+              </a></li>
+              <li><a href="#">Фабрики
+              </a></li>
+              <li><a href="#">Сертификаты</a></li>
+              <li><a href="#">Рассрочка
+              </a></li>
+              <li><a href="#">Фабрики
+              </a></li>
+              <li><a href="#certificates" class="go_to">Сертификаты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="footer-box">
+            <ul class="footer-menu my-ul">
+              <li><a href="#">Дизайнерам
+              </a></li>
+              <li><a href="#">Партнерам
+              </a></li>
+              <li><a href="faq.html">FAQ
+              </a></li>
+              <li><a href="#">Гарантия
+              </a></li>
+              <li><a href="#">Инструкция по монтажу
+              </a></li>
+              <li><a href="#">Карта сайта
+              </a></li>
+              <li><a href="#">Видео
+              </a></li>
+              <li><a href="#" data-toggle="modal" data-target="#callbackModal">Написать директору
+              </a></li>
+              <li><a href="#">Прайс</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-3 col-md-5">
+          <ul class="list-social my-ul">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-7 col-lg-5">
+          <a href="#" class="color-grey text-decoration politics-links" target="_blank">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--### FOOTER END ###-->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+        integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/common.js"></script>
+<script src="js/catalog.js"></script>
+
+</body>
+</html>
