@@ -1,0 +1,48 @@
+/*==========  page-my  ==========*/
+.page-my h1 {
+  margin: 0 0 13px; }
+
+.page-my .how-to-stages__box {
+  margin: 0 0 27px; }
+  .page-my .how-to-stages__box .box-text {
+    max-width: none; }
+  .page-my .how-to-stages__box:last-child {
+    margin: 0 0 25px; }
+
+.warranty-box {
+  margin: 0 0 27px; }
+  .warranty-box h4 {
+    font-size: 18px;
+    font-weight: bold; }
+  .warranty-box .box-text {
+    line-height: 26px; }
+
+.attention-box {
+  width: 100%;
+  padding: 24px 45px 27px 34px;
+  background: #E4E4E4;
+  margin: 0 0 25px; }
+  .attention-box h4 {
+    font-weight: bold;
+    font-size: 18px; }
+  .attention-box .box-text {
+    line-height: 26px; }
+
+.delivery-box {
+  margin: 30px 0 40px; }
+  .delivery-box h4 {
+    font-weight: bold;
+    font-size: 18px; }
+  .delivery-box .box-text {
+    line-height: 26px; }
+
+.images-wrapper__img {
+  width: 100%;
+  margin: 0 0 20px;
+  height: 224px;
+  background: #C4C4C4; }
+
+.images-wrapper {
+  margin: 20px 0; }
+
+/*==========  page-my end  ==========*/

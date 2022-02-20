@@ -1,0 +1,138 @@
+@import "vars"
+
+/*==========  contacts page  ==========*/
+.page-contacts
+  h1
+    margin: 0 0 13px
+
+
+.contacts-box
+  margin: 35px 0 0
+  font-size: 14px
+  h4
+    font-size: 14px
+    font-weight: bold
+  span
+    display: inline-block
+    &:after
+      content: '|'
+      margin: 0 5px
+      display: inline-block
+      color: $green
+    &:last-child
+      &:after
+        display: none
+  a
+    color: #000
+    display: inline-block
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+
+  .svg-icon
+    fill: $green
+    width: 17px
+    height: 12px
+    min-width: 17px
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    margin: 0 7px 0 0
+
+  .svg-phone
+    fill: none
+    stroke: $green
+    width: 13px
+    height: 34px
+    min-width: 13px
+
+.map-box
+  width: 100%
+  height: 100%
+  background: #C4C4C4
+
+.staff
+  margin: 43px 0 65px
+  h2
+    margin: 0 0 38px
+
+.staff-slider
+  .slick-list
+    margin: 0 -10px
+  .slick-arrow
+    width: 16px
+    height: 28px
+    stroke: none
+    fill: #414141
+  .slick-slide
+    padding: 0 10px
+
+.staff-box
+  width: 100%
+  height: 330px
+  position: relative
+  overflow: hidden
+  text-align: center
+  font-size: 14px
+  h3
+    font-weight: bold
+    font-size: 18px
+    margin: 0 0 10px
+  &__photo
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    top: 0
+    display: flex
+    align-items: center
+    justify-content: center
+  &__body
+    padding: 36px 32px
+    position: relative
+    z-index: 1
+    height: 100%
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-end
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(360deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0) 34.55%)
+
+
+.staff-phone
+  margin: 13px 0 0
+  color: #000
+  font-weight: bold
+  font-size: 14px
+  &:hover
+    color: $green
+
+.how-to
+  margin: 65px 0
+
+.legal-info
+  margin: 34px 0 0
+  line-height: 26px
+  h4
+    font-weight: bold
+    font-size: 18px
+  .box-text
+    line-height: 26px
+    p
+      margin: 0
+
+.how-to-stages__box
+  margin: 0 0 40px
+  &:last-child
+    margin: 0
+  h4
+    color: $green
+    margin: 0 0 8px
+    font-size: 18px
+    font-weight: bold
+  .box-text
+    line-height: 26px
+    max-width: 230px
+    min-height: 51px
+/*==========  contacts page end  ==========*/

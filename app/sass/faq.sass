@@ -1,0 +1,134 @@
+@import "vars"
+
+/*==========  faq page  ==========*/
+.callback-v3
+  margin: 60px 0 74px
+  .callback-img
+    min-width: 259px
+    max-width: 259px
+    left: 0
+    top: -155px
+
+.pagination-nav
+  margin: 32px 0 0
+  width: 100%
+
+.pagination
+  font-size: 14px
+  font-weight: bold
+  li
+    margin: 0 15px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: $green
+      border: none
+        radius: 2px
+      padding: 0
+      width: 26px
+      height: 26px
+      display: flex
+      align-items: center
+      justify-content: center
+    &:first-child, &:last-child
+      .page-link
+        border-radius: 2px
+      a.btn
+        border-radius: 25px
+    a.btn
+      height: 34px
+      padding: 0 30px
+      width: fit-content
+      border: 1px solid $green
+        radius: 25px
+  li.active
+    .page-link
+      background: $green
+      color: #fff
+
+.masters-card
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06)
+  background: #fff
+  margin: 64px 0 0
+  text-align: center
+  position: relative
+  &__photo
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    width: 80px
+    height: 80px
+    background: #C4C4C4
+    margin: 0 auto
+    position: absolute
+    top: -40px
+    left: 50%
+    transform: translate(-50%,0)
+  &__body
+    padding: 57px 25px 50px
+  .box-text
+    margin: 10px 0
+
+.form-masters
+  label
+    width: 100%
+    margin: 0 0 10px
+  button
+    width: 100%
+    max-width: none
+
+.faq-page
+  h1
+    margin: 0 0 25px
+
+.accordion
+  .card
+    padding: 0
+    border: none
+      radius: 3px
+    &:last-child
+      .card-header
+        border: none
+    .card-header
+      margin: 0
+  .card-header
+    background: #EEEEEE
+    margin: 0
+    border:
+      color: transparent
+      radius: 3px 3px 0 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 18px 33px 12px 30px
+    cursor: pointer
+    h4
+      font-size: 21px
+      font-weight: 600
+      max-width: 665px
+    .collapse-icon
+      transform: rotate(180deg)
+  .collapsed
+    background: transparent
+    border-bottom: 1px solid #E0E0E0
+    h4
+      font-size: 16px
+    .collapse-icon
+      transform: none
+  .card-body
+    background: #EEEEEE
+    border-radius: 0 0 3px 3px
+    padding: 0 80px 23px 30px
+    font-size: 14px
+    line-height: 21px
+
+.collapse-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  stroke: $green
+  width: 16px
+  height: 8px
+  min-width: 16px
+/*==========  faq page end  ==========*/

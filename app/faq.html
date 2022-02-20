@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>СКС - дверная база</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/service.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="fixed-block">
+  <div class="btn-close">
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#close"></use>
+    </svg>
+  </div>
+  <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+  <div class="fixed-block__head">
+
+    <div class="contacts-block">
+      <a href="tel:+78162902808" class="phone">+7 (816) 290-28-08</a>
+      <div class="schedule">Пн-Пт 9-19 Сб-Вс 10-17</div>
+    </div>
+    <div class="messengers">
+      <a href="#" class="messenger-box"><img src="img/whatsapp.png" alt=""></a>
+      <a href="#" class="messenger-box"><img src="img/viber.png" alt=""></a>
+      <a href="#" class="color-grey text-decoration">написать нам</a>
+    </div>
+  </div>
+
+  <form method="post" class="form-search">
+    <label>
+      <input type="text" placeholder="Поиск" name="search" required>
+      <button type="submit" class="form-search__btn">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+    </label>
+  </form>
+
+  <ul class="menu-products my-ul">
+    <li><a href="catalog.html">Межкомнатные двери</a></li>
+    <li><a href="catalog.html">Входные двери</a></li>
+    <li><a href="catalog.html">Раздвижные двери</a></li>
+    <li><a href="catalog.html">Скрытые двери</a></li>
+    <li><a href="catalog.html">Стеклянные двери</a></li>
+    <li><a href="catalog.html">Фурнитура</a></li>
+    <li><a href="catalog.html">Перегородки</a></li>
+    <li><a href="catalog.html">Двери спец. назначения</a></li>
+  </ul>
+
+  <div class="fixed-block__bottom">
+    <ul class="fixed-block-menu my-ul">
+      <li><a href="service.html">Услуги</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="#sales" class="go_to">Акции</a></li>
+      <li><a href="#">Купить оптом</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+
+
+    <div class="address-box">
+      <div class="address-box__icon d-flex">
+        <svg class="svg-icon fill-none">
+          <use xlink:href="img/sprite.svg#location"></use>
+        </svg>
+      </div>
+      <div class="address-box__text">
+        <strong>г. Великий Новгород</strong> ул. Нехинская 55 д (пер. Полевой)
+      </div>
+    </div>
+
+
+    <ul class="list-social my-ul">
+      <li><a href="#">
+        <img src="img/vk.svg" alt="">
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#instagram"></use>
+        </svg>
+      </a></li>
+    </ul>
+  </div>
+
+  <a href="#" class="btn btn-accent btn-call" data-toggle="modal" data-target="#callbackModal">
+    Бесплатный вызов замерщика
+  </a>
+</div>
+
+
+<!--### HEADER ###-->
+<header>
+  <div class="container">
+    <div class="btn-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="header-top">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="address-box">
+            <div class="address-box__icon d-flex">
+              <svg class="svg-icon fill-none">
+                <use xlink:href="img/sprite.svg#location"></use>
+              </svg>
+            </div>
+            <div class="address-box__text">
+              <strong>г. Великий Новгород</strong> ул. Нехинская 55 д (пер. Полевой)
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 d-flex flex-wrap align-items-center">
+          <div class="messengers">
+            <a href="#" class="messenger-box"><img src="img/whatsapp.png" alt=""></a>
+            <a href="#" class="messenger-box"><img src="img/viber.png" alt=""></a>
+          </div>
+
+          <a href="#" class="color-grey text-decoration">написать нам</a>
+          <a href="tel:+78162902808" class="phone">+7 (816) 290-28-08</a>
+          <div class="schedule">Пн-Пт 9-19 Сб-Вс 10-17</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="row align-items-center">
+
+        <div class="col-12 col-lg-8 d-none d-lg-block">
+          <ul class="menu my-ul">
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="#sales" class="go_to">Акции</a></li>
+            <li><a href="wholesale.html">Купить оптом</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-lg-4 d-flex flex-wrap align-items-center">
+
+          <a href="index.html" class="logo"><img src="img/logo-white.png" alt=""></a>
+
+          <a href="#" class="btn-search d-flex">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </a>
+          <div class="basket-box dropdown">
+            <a href="#" class="btn-basket d-flex dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+               aria-expanded="false">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#basket"></use>
+              </svg>
+
+              <span class="btn-basket__val">11</span>
+            </a>
+            <div class="dropdown-menu">
+              <span class="dropdown-box-basket">
+              <span class="dropdown-box-basket__icon d-flex"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#basket"></use></svg></span>
+              <span class="dropdown-box-basket__body">
+               В корзину добавлен
+                  <strong>1 товар</strong>
+              </span>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--### HEADER end ###-->
+
+<div class="page faq-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="about.html">О компании</a></li>
+            <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="col-12">
+        <h1>Ответы на популярные вопросы</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-8 col-lg-9">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne" data-toggle="collapse"
+                 data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h4>Есть ли у вас доставка в другие страны?</h4>
+              <div class="collapse-icon fill-none">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingTwo" data-toggle="collapse"
+                 data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingThree" data-toggle="collapse"
+                 data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingFour" data-toggle="collapse"
+                 data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingFive" data-toggle="collapse"
+                 data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingSex" data-toggle="collapse"
+                 data-target="#collapseSex" aria-expanded="false" aria-controls="collapseSex">
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapseSex" class="collapse" aria-labelledby="headingSex" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingSeven" data-toggle="collapse"
+                 data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingEight" data-toggle="collapse"
+                 data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingI" data-toggle="collapse"
+                 data-target="#collapseI" aria-expanded="false" aria-controls="collapseI">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapseI" class="collapse" aria-labelledby="headingI" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="heading10" data-toggle="collapse"
+                 data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="heading11" data-toggle="collapse"
+                 data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+              <h4>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapse11" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="heading12" data-toggle="collapse"
+                 data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="heading13" data-toggle="collapse"
+                 data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="heading14" data-toggle="collapse"
+                 data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="heading15" data-toggle="collapse"
+                 data-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+              <h4>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="heading16" data-toggle="collapse"
+                 data-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapse16" class="collapse" aria-labelledby="heading16" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="heading17" data-toggle="collapse"
+                 data-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapse17" class="collapse" aria-labelledby="heading17" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="heading18" data-toggle="collapse"
+                 data-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+              <h4>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapse18" class="collapse" aria-labelledby="heading18" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="heading19" data-toggle="collapse"
+                 data-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapse19" class="collapse" aria-labelledby="heading19" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="heading20" data-toggle="collapse"
+                 data-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapse20" class="collapse" aria-labelledby="heading20" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="heading21" data-toggle="collapse"
+                 data-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapse21" class="collapse" aria-labelledby="heading21" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="heading22" data-toggle="collapse"
+                 data-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+              <h4>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</h4>
+              <div class="collapse-icon">
+                <svg class="svg-icon fill-none">
+                  <use xlink:href="img/sprite.svg#bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapse22" class="collapse" aria-labelledby="heading22" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliqut esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="pagination-nav">
+          <ul class="pagination">
+            <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link btn btn-border" href="#">Дальше</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="sales-banner sales-banner-horizontal">
+          <div class="sales-banner__title">Акция</div>
+        </div>
+
+        <div class="masters-card">
+          <div class="masters-card__photo"></div>
+          <div class="masters-card__body">
+            <h3>Бесплатный вызов замерщика!</h3>
+            <div class="box-text">
+              <p>Василий, замерщик
+                и дизайнер</p>
+            </div>
+
+            <form method="post" class="form-masters">
+              <label><input type="text" placeholder="Номер телефона" name="phone"></label>
+              <button type="submit" class="btn btn-accent">Вызвать замерщика!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!--### SECTION  ###-->
+<div class="callback callback-v3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="callback-wrapper">
+          <div class="row">
+            <div class="col-md-4 col-lg-3 d-none d-md-block">
+              <div class="callback-img"><img src="img/product2.png" alt=""></div>
+            </div>
+            <div class="col-12 col-md-8 col-lg-8">
+              <div class="callback-body">
+                <h3>Получить <span class="bg-accent">купон</span> на скидку</h3>
+
+                <form method="post" class="form">
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                      <label>
+                        <input type="text" placeholder="Имя" name="name">
+                      </label>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                      <label>
+                        <input type="text" placeholder="Телефон" name="phone">
+                      </label>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <button type="submit" class="btn btn-accent">Отправить</button>
+                    </div>
+
+                    <div class="col-12">
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check" checked>
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Я ознакомился с <a href="#"
+                                                                       class="d-inline text-decoration color-grey">Политикой конфиденциальности</a> и даю своё согласие на обработку своих персональных данных</span>
+                      </label>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--### SECTION END ###-->
+
+<!--### FOOTER  ###-->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-4 col-lg-3">
+          <a href="index.html" class="logo"><img src="img/logo-white.png" alt=""></a>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-9 d-flex flex-wrap align-items-center">
+          <div class="address-box">
+            <div class="address-box__icon d-flex">
+              <svg class="svg-icon fill-none">
+                <use xlink:href="img/sprite.svg#location"></use>
+              </svg>
+            </div>
+            <div class="address-box__text">
+              <strong>г. Великий Новгород</strong> ул. Нехинская 55 д (пер. Полевой)
+            </div>
+          </div>
+          <a href="tel:+78162902808" class="phone">
+            <span class="phone-icon d-flex"><svg class="svg-icon fill-none"><use
+                xlink:href="img/sprite.svg#phone"></use></svg></span>
+            +7 (816) 290-28-08</a>
+
+          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#callbackModal">Бесплатный вызов
+            замерщика</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-center">
+      <div class="row">
+        <div class="col-6 col-lg-3">
+          <div class="footer-box">
+            <h4>КАТАЛОГ</h4>
+            <ul class="footer-menu my-ul">
+              <li><a href="catalog.html">Входные двери
+              </a></li>
+              <li><a href="catalog.html">Межкомнатные двери
+              </a></li>
+              <li><a href="catalog.html">Противопожарные двери
+              </a></li>
+              <li><a href="catalog.html">Специальные двери
+              </a></li>
+              <li><a href="catalog.html">Банные двери
+              </a></li>
+              <li><a href="catalog.html">Фурнитура
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="footer-box">
+            <h4>О КОМПАНИИ</h4>
+            <ul class="footer-menu my-ul">
+              <li><a href="#">Акции
+              </a></li>
+              <li><a href="contacts.html">Контакты
+              </a></li>
+              <li><a href="#">Оплата
+              </a></li>
+              <li><a href="#">Доставка
+              </a></li>
+              <li><a href="#">Наши работы
+              </a></li>
+              <li><a href="#reviews" class="go_to">Отзывы
+              </a></li>
+              <li><a href="#">Скидки от партнеров
+              </a></li>
+              <li><a href="#">Возврат
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="footer-box">
+            <ul class="footer-menu my-ul">
+              <li><a href="#news" class="go_to">Новости
+              </a></li>
+              <li><a href="#">Вакансии
+              </a></li>
+              <li><a href="#">Оптом</a></li>
+              <li><a href="#">Рассрочка
+              </a></li>
+              <li><a href="#">Фабрики
+              </a></li>
+              <li><a href="#">Сертификаты</a></li>
+              <li><a href="#">Рассрочка
+              </a></li>
+              <li><a href="#">Фабрики
+              </a></li>
+              <li><a href="#certificates" class="go_to">Сертификаты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="footer-box">
+            <ul class="footer-menu my-ul">
+              <li><a href="#">Дизайнерам
+              </a></li>
+              <li><a href="#">Партнерам
+              </a></li>
+              <li><a href="faq.html">FAQ
+              </a></li>
+              <li><a href="#">Гарантия
+              </a></li>
+              <li><a href="#">Инструкция по монтажу
+              </a></li>
+              <li><a href="#">Карта сайта
+              </a></li>
+              <li><a href="#">Видео
+              </a></li>
+              <li><a href="#" data-toggle="modal" data-target="#callbackModal">Написать директору
+              </a></li>
+              <li><a href="#">Прайс</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-3 col-md-5">
+          <ul class="list-social my-ul">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-7 col-lg-5">
+          <a href="#" class="color-grey text-decoration politics-links" target="_blank">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--### FOOTER END ###-->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/service.js"></script>
+
+</body>
+</html>

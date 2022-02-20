@@ -1,0 +1,112 @@
+/*==========  service page  ==========*/
+.gallery-work {
+  margin: 40px 0 60px; }
+  .gallery-work h2 {
+    margin: 0 0 34px; }
+
+.gallery-work-slider .slick-list {
+  min-width: 2000px; }
+
+.gallery-work-slider .slick-slide {
+  margin: 0 20px 0 0; }
+
+.gallery-work-item {
+  background: #C4C4C4;
+  width: 280px;
+  height: 333px; }
+
+.gallery-work-col {
+  width: 280px; }
+  .gallery-work-col .gallery-work-item {
+    width: 100%;
+    height: 157px;
+    margin: 0 0 19px; }
+    .gallery-work-col .gallery-work-item:last-child {
+      margin: 0; }
+
+.gallery-work-item-width {
+  width: 380px; }
+  .gallery-work-item-width .gallery-work-item {
+    height: 157px; }
+
+.gallery-work-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .gallery-work-row .gallery-work-item {
+    margin: 0;
+    width: calc(50% - 10px); }
+
+.callback-service {
+  margin: 87px 0 0; }
+  .callback-service h3 {
+    margin: 0 0 40px;
+    text-transform: uppercase;
+    font-size: 25px; }
+  .callback-service .callback-img {
+    height: 350px;
+    overflow: hidden;
+    min-width: 300px;
+    max-width: 300px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    left: 0;
+    top: auto;
+    bottom: -70px; }
+
+.sales-banner-horizontal {
+  width: 100%;
+  height: 432px; }
+
+.about-masters {
+  margin: 55px 0 0; }
+  .about-masters h2 {
+    margin: 0 0 15px; }
+
+.table-price-service {
+  width: 100%;
+  margin: 40px 0 0;
+  font-size: 16px; }
+  .table-price-service thead {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000; }
+  .table-price-service th {
+    background: #EEEEEE;
+    padding: 5px 21px;
+    border: 1px solid #EEEEEE; }
+  .table-price-service td {
+    padding: 12px 22px;
+    border: 1px solid #E0E0E0; }
+    .table-price-service td.text-center {
+      font-weight: bold;
+      font-size: 16px; }
+  .table-price-service .td-hidden {
+    display: none; }
+  .table-price-service tbody {
+    font-size: 14px;
+    line-height: 26px; }
+  .table-price-service tr {
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    cursor: pointer; }
+    .table-price-service tr:hover {
+      background: rgba(120, 219, 74, 0.35); }
+  .table-price-service__name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    vertical-align: middle; }
+
+/*==========  service page  ==========*/

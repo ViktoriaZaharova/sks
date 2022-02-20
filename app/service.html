@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>СКС - дверная база</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/service.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="fixed-block">
+  <div class="btn-close">
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#close"></use>
+    </svg>
+  </div>
+  <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+  <div class="fixed-block__head">
+
+    <div class="contacts-block">
+      <a href="tel:+78162902808" class="phone">+7 (816) 290-28-08</a>
+      <div class="schedule">Пн-Пт 9-19 Сб-Вс 10-17</div>
+    </div>
+    <div class="messengers">
+      <a href="#" class="messenger-box"><img src="img/whatsapp.png" alt=""></a>
+      <a href="#" class="messenger-box"><img src="img/viber.png" alt=""></a>
+      <a href="#" class="color-grey text-decoration">написать нам</a>
+    </div>
+  </div>
+
+  <form method="post" class="form-search">
+    <label>
+      <input type="text" placeholder="Поиск" name="search" required>
+      <button type="submit" class="form-search__btn">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+    </label>
+  </form>
+
+  <ul class="menu-products my-ul">
+    <li><a href="catalog.html">Межкомнатные двери</a></li>
+    <li><a href="catalog.html">Входные двери</a></li>
+    <li><a href="catalog.html">Раздвижные двери</a></li>
+    <li><a href="catalog.html">Скрытые двери</a></li>
+    <li><a href="catalog.html">Стеклянные двери</a></li>
+    <li><a href="catalog.html">Фурнитура</a></li>
+    <li><a href="catalog.html">Перегородки</a></li>
+    <li><a href="catalog.html">Двери спец. назначения</a></li>
+  </ul>
+
+  <div class="fixed-block__bottom">
+    <ul class="fixed-block-menu my-ul">
+      <li><a href="service.html">Услуги</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="#sales" class="go_to">Акции</a></li>
+      <li><a href="#">Купить оптом</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+
+
+    <div class="address-box">
+      <div class="address-box__icon d-flex">
+        <svg class="svg-icon fill-none">
+          <use xlink:href="img/sprite.svg#location"></use>
+        </svg>
+      </div>
+      <div class="address-box__text">
+        <strong>г. Великий Новгород</strong> ул. Нехинская 55 д (пер. Полевой)
+      </div>
+    </div>
+
+
+    <ul class="list-social my-ul">
+      <li><a href="#">
+        <img src="img/vk.svg" alt="">
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#instagram"></use>
+        </svg>
+      </a></li>
+    </ul>
+  </div>
+
+  <a href="#" class="btn btn-accent btn-call" data-toggle="modal" data-target="#callbackModal">
+    Бесплатный вызов замерщика
+  </a>
+</div>
+
+
+<!--### HEADER ###-->
+<header>
+  <div class="container">
+    <div class="btn-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="header-top">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="address-box">
+            <div class="address-box__icon d-flex">
+              <svg class="svg-icon fill-none">
+                <use xlink:href="img/sprite.svg#location"></use>
+              </svg>
+            </div>
+            <div class="address-box__text">
+              <strong>г. Великий Новгород</strong> ул. Нехинская 55 д (пер. Полевой)
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 d-flex flex-wrap align-items-center">
+          <div class="messengers">
+            <a href="#" class="messenger-box"><img src="img/whatsapp.png" alt=""></a>
+            <a href="#" class="messenger-box"><img src="img/viber.png" alt=""></a>
+          </div>
+
+          <a href="#" class="color-grey text-decoration">написать нам</a>
+          <a href="tel:+78162902808" class="phone">+7 (816) 290-28-08</a>
+          <div class="schedule">Пн-Пт 9-19 Сб-Вс 10-17</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="row align-items-center">
+
+        <div class="col-12 col-lg-8 d-none d-lg-block">
+          <ul class="menu my-ul">
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="#sales" class="go_to">Акции</a></li>
+            <li><a href="wholesale.html">Купить оптом</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-lg-4 d-flex flex-wrap align-items-center">
+
+          <a href="index.html" class="logo"><img src="img/logo-white.png" alt=""></a>
+
+          <a href="#" class="btn-search d-flex">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </a>
+          <div class="basket-box dropdown">
+            <a href="#" class="btn-basket d-flex dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+               aria-expanded="false">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#basket"></use>
+              </svg>
+
+              <span class="btn-basket__val">11</span>
+            </a>
+            <div class="dropdown-menu">
+              <span class="dropdown-box-basket">
+              <span class="dropdown-box-basket__icon d-flex"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#basket"></use></svg></span>
+              <span class="dropdown-box-basket__body">
+               В корзину добавлен
+                  <strong>1 товар</strong>
+              </span>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--### HEADER end ###-->
+
+<div class="page page-service">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="services.html">Услуги</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Замер и монтаж</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="col-12 d-none d-sm-block">
+        <h1>Замер и монтаж</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="callback-wrapper callback-service">
+          <div class="row">
+            <div class="col-md-4 col-lg-3 d-none d-md-block">
+              <div class="callback-img"><img src="img/men.png" alt=""></div>
+            </div>
+            <div class="col-12 col-md-8 col-lg-8">
+              <div class="callback-body">
+                <h3>Василий, замерщик и дизайнер</h3>
+
+                <form method="post" class="form">
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                      <label>
+                        <input type="text" placeholder="Имя" name="name">
+                      </label>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                      <label>
+                        <input type="text" placeholder="Телефон" name="phone">
+                      </label>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <button type="submit" class="btn btn-accent">Отправить</button>
+                    </div>
+
+                    <div class="col-12">
+                      <label class="checkbox">
+                        <input type="checkbox" class="inp-check" checked>
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Я ознакомился с <a href="#"
+                                                                       class="d-inline text-decoration color-grey">Политикой конфиденциальности</a> и даю своё согласие на обработку своих персональных данных</span>
+                      </label>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="about-masters">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8 col-lg-9">
+        <h2>Мастер по замеру дверей</h2>
+        <div class="box-text">
+          <p>приедет на объект (квартира, загородный дом, офис) в удобное для Вас время, сделает требуемые замеры,
+            согласует с вами стоимость работ и важные моменты по установке дверей, а также даст необходимые
+            рекомендации.</p>
+
+          <p>Убедительная просьба, заранее сообщить о каких-либо работах, которые будут вестись во временном промежутке
+            между замером дверей и установкой, и которые в дальнейшем могут повлиять на уровень пола, толщину стен и
+            т.д. В случае, если размеры дверных проемов после произведенного замера будут изменены без согласования с
+            нашим замерщиком, ответственность за неправильно изготовленные дверные блоки компания не несёт.</p>
+
+          <p>Все данные по произведенному замеру межкомнатных дверей мастер впишет в специальный бланк (акт выполненного
+            замера) и оставит Вам лично или вашему представителю. По желанию, этот бланк также может быть передан
+            замерщиком в один из выбранных Вами магазинов или конкретному менеджеру.</p>
+
+          <p>Если все необходимые замеры Вы произвели самостоятельно или имеете бланк замера другой компании, Вы также
+            можете осуществить заказ дверей в наших магазинах. Но при этом всю ответственность за правильность указанных
+            размеров вы берёте на себя.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="sales-banner sales-banner-horizontal">
+          <div class="sales-banner__title">Акция</div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <table class="table-price-service">
+          <thead>
+          <tr>
+            <th></th>
+            <th>Услуга</th>
+            <th class="text-center">Цена</th>
+            <th class="text-center">Название</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="table-price-service__name" rowspan="2">Монтаж</td>
+            <td>Замер окна горизонтальный рулеткой</td>
+            <td class="text-center table-price-service__price">15 000 руб</td>
+            <td class="text-center">шт</td>
+          </tr>
+          <tr>
+            <td class="td-hidden table-price-service__name">Монтаж</td>
+            <td>Замер окна вертикальный рулеткой</td>
+            <td class="text-center table-price-service__price">1 000 руб</td>
+            <td class="text-center">шт</td>
+          </tr>
+          <tr>
+            <td class="table-price-service__name">Монтаж</td>
+            <td>Замер окна горизонтальный рулеткой</td>
+            <td class="text-center table-price-service__price">1 000 руб</td>
+            <td class="text-center">шт</td>
+          </tr>
+          <tr>
+            <td class="table-price-service__name">Монтаж</td>
+            <td>Замер окна горизонтальный рулеткой</td>
+            <td class="text-center table-price-service__price">1 000 руб</td>
+            <td class="text-center">шт</td>
+          </tr>
+          <tr>
+            <td class="table-price-service__name">Монтаж</td>
+            <td>Замер окна горизонтальный рулеткой</td>
+            <td class="text-center table-price-service__price">15 000 руб</td>
+            <td class="text-center">шт</td>
+          </tr>
+          <tr>
+            <td class="table-price-service__name">Электромонтажные работы</td>
+            <td>Замер окна горизонтальный рулеткой</td>
+            <td class="text-center table-price-service__price">15 000 руб</td>
+            <td class="text-center">шт</td>
+          </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--### SECTION gallery-work ###-->
+<section class="gallery-work">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Фото готовых работ</h2>
+      </div>
+
+      <div class="col-12">
+        <div class="gallery-work-slider">
+          <div class="slide">
+            <div class="gallery-work-col">
+              <div class="gallery-work-item"></div>
+              <div class="gallery-work-item"></div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="gallery-work-item"></div>
+          </div>
+
+          <div class="slide">
+            <div class="gallery-work-col gallery-work-item-width">
+              <div class="gallery-work-item"></div>
+              <div class="gallery-work-row">
+                <div class="gallery-work-item"></div>
+                <div class="gallery-work-item"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="gallery-work-item"></div>
+          </div>
+
+          <div class="slide">
+            <div class="gallery-work-col">
+              <div class="gallery-work-item"></div>
+              <div class="gallery-work-item"></div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="gallery-work-col gallery-work-item-width">
+              <div class="gallery-work-item"></div>
+              <div class="gallery-work-row">
+                <div class="gallery-work-item"></div>
+                <div class="gallery-work-item"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--### SECTION gallery-work end ###-->
+
+<!--### SECTION reviews ###-->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h2>Отзывы</h2>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="grade">
+          <div class="grade-text">
+            <h4>Средняя оценка</h4>
+            <p>50 отзывов</p>
+          </div>
+          <ul class="list-stars my-ul">
+            <li><img src="img/star.svg" alt=""></li>
+            <li><img src="img/star.svg" alt=""></li>
+            <li><img src="img/star.svg" alt=""></li>
+            <li><img src="img/star.svg" alt=""></li>
+            <li><img src="img/star-1.svg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="reviews-box">
+          <div class="reviews-box__avatar"><img src="img/reviews1.jpeg" alt=""></div>
+          <div class="reviews-box__body">
+            <div class="reviews-box__head">
+              <div class="reviews-box__name">
+                <h4>Имя Фамилия </h4>
+                <div class="date">30 Ноября 2021</div>
+              </div>
+              <ul class="list-stars my-ul">
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star-1.svg" alt=""></li>
+              </ul>
+            </div>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ull</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="reviews-box">
+          <div class="reviews-box__avatar"><img src="img/reviews2.jpeg" alt=""></div>
+          <div class="reviews-box__body">
+            <div class="reviews-box__head">
+              <div class="reviews-box__name">
+                <h4>Имя Фамилия </h4>
+                <div class="date">30 Ноября 2021</div>
+              </div>
+              <ul class="list-stars my-ul">
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star.svg" alt=""></li>
+                <li><img src="img/star-1.svg" alt=""></li>
+              </ul>
+            </div>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 btn-group-wrap">
+        <div class="btn-group">
+          <a href="#" class="btn btn-accent">Читать все</a>
+          <a href="#" class="btn btn-border btn-add-reviews">Оставить отзыв</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="leave-feedback">
+      <div class="row">
+        <div class="col-12">
+          <h3>Оставить отзыв</h3>
+
+          <form method="post" class="form form-feedback">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+                <label>
+                  <input type="text" placeholder="Имя" name="name">
+                </label>
+                <label>
+                  <input type="text" placeholder="Телефон" name="phone">
+                </label>
+
+                <div class="estimate d-none d-md-block">
+                  <p>Оцените нас</p>
+
+                  <ul class="list-stars my-ul">
+                    <li><img src="img/star.svg" alt=""></li>
+                    <li><img src="img/star.svg" alt=""></li>
+                    <li><img src="img/star.svg" alt=""></li>
+                    <li><img src="img/star.svg" alt=""></li>
+                    <li><img src="img/star-1.svg" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-6">
+                <label><textarea name="message" placeholder="Комментарий"></textarea></label>
+              </div>
+
+              <div class="col-12 d-block d-md-none">
+                <div class="estimate">
+                  <p>Оцените нас</p>
+
+                  <ul class="list-stars my-ul">
+                    <li><img src="img/star.svg" alt=""></li>
+                    <li><img src="img/star.svg" alt=""></li>
+                    <li><img src="img/star.svg" alt=""></li>
+                    <li><img src="img/star.svg" alt=""></li>
+                    <li><img src="img/star-1.svg" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="btn-group">
+                  <button type="submit" class="btn btn-accent">Отправить</button>
+                  <a href="#" class="btn btn-border btn-hidden-reviews">Свернуть</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION END ###-->
+
+<!--### SECTION certificates ###-->
+<section class="certificates" id="certificates">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Сертификаты</h2>
+      </div>
+
+      <div class="col-12">
+        <div class="certificates-slider">
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="certificates-box" data-fancybox="image"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION certificates END ###-->
+
+<!--### FOOTER  ###-->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-4 col-lg-3">
+          <a href="index.html" class="logo"><img src="img/logo-white.png" alt=""></a>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-9 d-flex flex-wrap align-items-center">
+          <div class="address-box">
+            <div class="address-box__icon d-flex">
+              <svg class="svg-icon fill-none">
+                <use xlink:href="img/sprite.svg#location"></use>
+              </svg>
+            </div>
+            <div class="address-box__text">
+              <strong>г. Великий Новгород</strong> ул. Нехинская 55 д (пер. Полевой)
+            </div>
+          </div>
+          <a href="tel:+78162902808" class="phone">
+            <span class="phone-icon d-flex"><svg class="svg-icon fill-none"><use
+                xlink:href="img/sprite.svg#phone"></use></svg></span>
+            +7 (816) 290-28-08</a>
+
+          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#callbackModal">Бесплатный вызов
+            замерщика</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-center">
+      <div class="row">
+        <div class="col-6 col-lg-3">
+          <div class="footer-box">
+            <h4>КАТАЛОГ</h4>
+            <ul class="footer-menu my-ul">
+              <li><a href="catalog.html">Входные двери
+              </a></li>
+              <li><a href="catalog.html">Межкомнатные двери
+              </a></li>
+              <li><a href="catalog.html">Противопожарные двери
+              </a></li>
+              <li><a href="catalog.html">Специальные двери
+              </a></li>
+              <li><a href="catalog.html">Банные двери
+              </a></li>
+              <li><a href="catalog.html">Фурнитура
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="footer-box">
+            <h4>О КОМПАНИИ</h4>
+            <ul class="footer-menu my-ul">
+              <li><a href="#">Акции
+              </a></li>
+              <li><a href="contacts.html">Контакты
+              </a></li>
+              <li><a href="#">Оплата
+              </a></li>
+              <li><a href="#">Доставка
+              </a></li>
+              <li><a href="#">Наши работы
+              </a></li>
+              <li><a href="#reviews" class="go_to">Отзывы
+              </a></li>
+              <li><a href="#">Скидки от партнеров
+              </a></li>
+              <li><a href="#">Возврат
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="footer-box">
+            <ul class="footer-menu my-ul">
+              <li><a href="#news" class="go_to">Новости
+              </a></li>
+              <li><a href="#">Вакансии
+              </a></li>
+              <li><a href="#">Оптом</a></li>
+              <li><a href="#">Рассрочка
+              </a></li>
+              <li><a href="#">Фабрики
+              </a></li>
+              <li><a href="#">Сертификаты</a></li>
+              <li><a href="#">Рассрочка
+              </a></li>
+              <li><a href="#">Фабрики
+              </a></li>
+              <li><a href="#certificates" class="go_to">Сертификаты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="footer-box">
+            <ul class="footer-menu my-ul">
+              <li><a href="#">Дизайнерам
+              </a></li>
+              <li><a href="#">Партнерам
+              </a></li>
+              <li><a href="faq.html">FAQ
+              </a></li>
+              <li><a href="#">Гарантия
+              </a></li>
+              <li><a href="#">Инструкция по монтажу
+              </a></li>
+              <li><a href="#">Карта сайта
+              </a></li>
+              <li><a href="#">Видео
+              </a></li>
+              <li><a href="#" data-toggle="modal" data-target="#callbackModal">Написать директору
+              </a></li>
+              <li><a href="#">Прайс</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-3 col-md-5">
+          <ul class="list-social my-ul">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-7 col-lg-5">
+          <a href="#" class="color-grey text-decoration politics-links" target="_blank">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--### FOOTER END ###-->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/service.js"></script>
+
+</body>
+</html>

@@ -76,7 +76,15 @@
   .product-gallery__item {
     height: 400px; }
   .tab-content .list-characteristics span {
-    min-width: 120px; } }
+    min-width: 120px; }
+  .callback-service .callback-img {
+    bottom: -40px;
+    min-width: auto;
+    width: 100%; }
+  .callback-v3 .callback-img {
+    min-width: auto;
+    width: 100%;
+    max-width: 100%; } }
 
 @media only screen and (max-width: 1400px) {
   .container {
@@ -222,7 +230,15 @@
     max-width: none;
     margin: 0 0 18px; }
     .tab-content .list-characteristics span {
-      min-width: auto; } }
+      min-width: auto; }
+  .about-masters {
+    margin: 46px 0 0; }
+    .about-masters h2 {
+      margin: 0 0 22px; }
+  .map-box {
+    height: 472px;
+    width: calc(100% + 20px);
+    margin: 24px -10px 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -377,7 +393,67 @@
     margin: 0 auto 20px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .callback-service {
+    margin: 30px 0 0; }
+  .sales-banner-horizontal {
+    margin: 19px auto 0;
+    height: 432px;
+    max-width: 280px; }
+  .table-price-service {
+    margin: 45px 0 0; }
+    .table-price-service thead {
+      display: none; }
+    .table-price-service tbody tr {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      border: 1px solid #E0E0E0;
+      padding: 14px 24px;
+      margin: 0 0 -1px; }
+    .table-price-service tbody td {
+      border: none;
+      padding: 0; }
+      .table-price-service tbody td:last-child {
+        display: none; }
+    .table-price-service tbody .td-hidden {
+      display: block; }
+  .table-price-service__price {
+    margin: 9px 0 0; }
+  .gallery-work {
+    margin: 50px 0 60px; }
+  .gallery-work-slider .slick-list {
+    min-width: auto;
+    width: calc(100% + 20px);
+    margin: 0 -10px; }
+  .callback-v3 {
+    margin: 72px 0 61px; }
+  .faq-page .sales-banner-horizontal {
+    margin: 32px auto 0; }
+  .masters-card {
+    margin: 64px auto 0;
+    max-width: 280px;
+    width: 100%; }
+  .how-to-stages__box {
+    margin: 0 0 25px; }
+    .how-to-stages__box:last-child {
+      margin: 0 0 25px; }
+    .how-to-stages__box .box-text {
+      min-height: auto;
+      max-width: none; }
+  .legal-info {
+    margin: 0; }
+  .how-to .video-box {
+    margin: 0 auto 48px; }
+  .table-price-delivery tbody td:last-child {
+    display: block; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
@@ -520,7 +596,24 @@
   .product-gallery {
     width: 100%; }
     .product-gallery__item {
-      height: 342px; } }
+      height: 342px; }
+  .callback-service {
+    margin: 0; }
+  .accordion {
+    width: calc(100% + 20px);
+    margin: 0 -10px; }
+  .faq-page h1 {
+    margin: 0 0 16px; }
+  .accordion .card-body {
+    padding-right: 30px; }
+  .pagination li {
+    display: none; }
+    .pagination li:nth-child(-n+5) {
+      display: block; }
+    .pagination li:last-child {
+      display: block; }
+  .images-wrapper__img {
+    height: 194px; } }
 
 @media only screen and (max-width: 480px) {
   header .container {
@@ -626,7 +719,23 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     .tab-content .list-characteristics li span {
-      padding: 0; } }
+      padding: 0; }
+  .staff-slider {
+    padding: 0 28px; }
+    .staff-slider .slick-prev {
+      left: 0; }
+    .staff-slider .slick-next {
+      right: 0; }
+    .staff-slider .slick-list {
+      margin: 0; }
+    .staff-slider .slick-slide {
+      padding: 0; }
+  .staff {
+    margin: 48px 0 64px; }
+  .attention-box {
+    padding: 24px 28px 23px 34px; }
+  .table-price-delivery {
+    margin: 20px 0 0; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
